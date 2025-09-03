@@ -131,7 +131,6 @@
     let layout = isotopeItem.getAttribute("data-layout") ?? "masonry";
     let filter = isotopeItem.getAttribute("data-default-filter") ?? "*";
     let sort = isotopeItem.getAttribute("data-sort") ?? "original-order";
-    console.log(layout);
     let initIsotope;
     imagesLoaded(isotopeItem.querySelector(".isotope-container"), function () {
       initIsotope = new Isotope(
@@ -187,7 +186,10 @@
     } else {
       const items = cont_selecto.querySelectorAll(".faq-item");
       items.forEach((item) => {
-        if (item.classList.contains("faq-active")) {
+        if (
+          item.classList.contains("faq-active") &&
+          item.classList != elem_selecto.parentNode.classList
+        ) {
           item.classList.remove("faq-active");
         }
       });
@@ -196,14 +198,42 @@
   };
 
   /**
+   * Pestañas
+   */
+
+  /**
    * Init swiper sliders
    */
+  const conf_swiper = {
+    loop: "true",
+    speed: "600",
+    autoplay: {
+      delay: "5000",
+    },
+    slidesPerView: "auto",
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: "true",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: "1",
+        spaceBetween: "40",
+      },
+      1200: {
+        slidesPerView: "3",
+        spaceBetween: "10",
+      },
+    },
+  };
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
-      let config = JSON.parse(
-        swiperElement.querySelector(".swiper-config").innerHTML.trim()
-      );
+      let config = conf_swiper;
+      //  let config = JSON.parse(
+      //        swiperElement.querySelector(".swiper-config").innerHTML.trim()
 
+      //     );
       if (swiperElement.classList.contains("swiper-tab")) {
         initSwiperWithCustomPagination(swiperElement, config);
       } else {

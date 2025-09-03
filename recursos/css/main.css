@@ -114,6 +114,9 @@ h6 {
 .separador {
   padding: 2rem;
 }
+.min-vh-70 {
+  min-height: 70vh;
+}
 @media only screen and (max-width: 767px) {
   .fondo-lectura-negro {
     padding: 10%;
@@ -1399,6 +1402,133 @@ section,
   .card_directiva > img {
     width: 45%;
     position: static;
+  }
+}
+
+/* Pestañas
+------------------------------*/
+.cont_tabs {
+  margin: 15px auto 0;
+}
+
+.cont_tabs .tabs_aspecto {
+  padding: 20px;
+  border-bottom: 1px solid #ebedec1d;
+}
+
+.cont_tabs .tabs_aspecto ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  margin: 1.5% 0;
+}
+.cont_tabs .tabs_aspecto ul li {
+  padding: 0 1%;
+}
+
+.cont_tabs .tabs_aspecto ul li button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 20px 10px 20px;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 5px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  color: #005d8b;
+  min-height: 3rem;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.cont_tabs .tabs_aspecto ul li:first-child {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.cont_tabs .tabs_aspecto ul li:last-child {
+  border-right: 0px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.cont_tabs .tabs_aspecto ul li button:hover,
+.cont_tabs .tabs_aspecto ul li button.active {
+  background: #005d8b;
+  color: #fff;
+}
+
+.cont_tabs .container .elemento_tab {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ebedec;
+  cursor: pointer;
+}
+
+.cont_tabs .container .elemento_tab:hover {
+  background: #e9ecf1;
+}
+
+.cont_tabs .container .item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.elemento_tab .item .item_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tab-vertical > div > div > ul > li {
+  min-width: 100%;
+}
+
+/*****************************/
+/* Icon box */
+/*****************************/
+
+@media (max-width: 992px) {
+  .cont_tabs .tabs_aspecto ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5% 0;
+    align-items: center;
+    padding: 0;
+  }
+  .cont_tabs .tabs_aspecto ul li {
+    display: flex;
+    justify-content: center;
+    padding: 1% 0;
+    width: 100%;
+  }
+  .cont_tabs .tabs_aspecto ul li button {
+    min-width: 55%;
+  }
+}
+@media (max-width: 768px) {
+  .cont_tabs .tabs_aspecto ul li button {
+    min-width: 100%;
   }
 }
 

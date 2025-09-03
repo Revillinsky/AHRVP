@@ -246,31 +246,6 @@
           <!-- /Título  -->
           <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 600,
-                    "autoplay": {
-                      "delay": 5000
-                    },
-                    "slidesPerView": "auto",
-                    "pagination": {
-                      "el": ".swiper-pagination",
-                      "type": "bullets",
-                      "clickable": true
-                    },
-                    "breakpoints": {
-                      "320": {
-                        "slidesPerView": 1,
-                        "spaceBetween": 40
-                      },
-                      "1200": {
-                        "slidesPerView": 3,
-                        "spaceBetween": 10
-                      }
-                    }
-                  }
-                </script>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="testimonial-item">
@@ -704,46 +679,118 @@
       </div>
       <!-- /Directiva -->
       <div class="separador"></div>
-      <!-- Ética -->
+      <!-- Integridad -->
       <div id="etica" class="container fondo-lectura-negro">
-        <!-- Ética-->
+        <!-- Titulo-->
         <div class="container" data-aos="fade-up">
-          <h2>Portfolio</h2>
+          <h2>Integridad de la asociación</h2>
           <p>
             Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
             consectetur velit
           </p>
         </div>
-        <!-- End Section Title -->
-        <div class="container">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="codigo_etica-tab" data-bs-toggle="tab" data-bs-target="#codigo_etica"
-                type="button" role="tab" aria-controls="codigo_etica" aria-selected="true">Código de Ética</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="estandares-tab" data-bs-toggle="tab" data-bs-target="#estandares"
-                type="button" role="tab" aria-controls="estandares" aria-selected="false">Nuestros estándares</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="perfil_terapeuta-tab" data-bs-toggle="tab" data-bs-target="#perfil_terapeuta"
-                type="button" role="tab" aria-controls="perfil_terapeuta" aria-selected="false">Perfil del terapeuta
-                AHRVP</button>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="codigo_etica" role="tabpanel" aria-labelledby="codigo_etica-tab">
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin diam eu libero malesuada
-                porttitor nec a ligula. Praesent efficitur hendrerit massa, quis faucibus lacus placerat quis. Phasellus
-                posuere quam at ligula pharetra facilisis. Etiam et aliquet velit. Sed porta felis non nisi dapibus,
-                eget molestie ligula sollicitudin. Curabitur placerat imperdiet ante, id tempus justo efficitur eget.
-                Morbi sapien mauris, viverra eget ante id, semper feugiat arcu. Mauris commodo augue magna, ut porta
-                mauris malesuada nec. Sed lorem magna, finibus eu tincidunt vel, euismod non quam. Pellentesque
-                convallis, ex at viverra mattis, arcu quam semper nibh, non iaculis neque velit eu turpis. Curabitur
-                augue turpis, viverra vitae sollicitudin at, iaculis sit amet neque. Sed dui urna, egestas at odio id,
-                viverra semper purus. Sed vestibulum magna sapien, non aliquet justo pulvinar vel. Nulla eu imperdiet
-                ipsum. Cras ut fermentum orci, eget porta velit. Vivamus nec nulla in lacus facilisis fringilla.
+        <!-- /Titulo -->
+        <div class="container cont_tabs">
+          <div class="tabs_aspecto">
+            <ul id="Tab_Integridad" role="tablist" data-aos="fade-down" data-aos-delay="100">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="codigo-tab" data-bs-toggle="tab" data-bs-target="#codigo-tab-pane"
+                  type="button" role="tab" aria-controls="codigo-tab-pane" aria-selected="true">
+                  <i class="bi bi-file-earmark-medical"></i>
+                  Código de Ética
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="estandares-tab" data-bs-toggle="tab" data-bs-target="#estandares-tab-pane"
+                  type="button" role="tab" aria-controls="estandares-tab-pane" aria-selected="false">
+                  <i class="bi bi-file-earmark-check-fill"></i>
+                  Nuestros estándares
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="PerfilTerapeuta-tab" data-bs-toggle="tab"
+                  data-bs-target="#PerfilTerapeuta-tab-pane" type="button" role="tab"
+                  aria-controls="PerfilTerapeuta-tab-pane" aria-selected="false">
+                  <i class="bi bi-person-badge"></i>
+                  Perfil del terapeuta AHRVP</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="Tab_Integridad" data-aos="fade-left">
+            <div class="tab-pane fade show active elemento_tab" id="codigo-tab-pane" role="tabpanel"
+              aria-labelledby="codigo-tab" tabindex="0">
+              <div>Código de Ética Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin diam eu
+                libero malesuada porttitor nec a ligula. Praesent efficitur hendrerit massa, quis faucibus lacus
+                placerat quis. Phasellus posuere quam at ligula pharetra facilisis. Etiam et aliquet velit. Sed porta
+                felis non nisi dapibus, eget molestie ligula sollicitudin. Curabitur placerat imperdiet ante, id tempus
+                justo efficitur eget. Morbi sapien mauris, viverra eget ante id, semper feugiat arcu. Mauris commodo
+                augue magna, ut porta mauris malesuada nec. Sed lorem magna, finibus eu tincidunt vel, euismod non quam.
+                Pellentesque convallis, ex at viverra mattis, arcu quam semper nibh, non iaculis neque velit eu turpis.
+                Curabitur augue turpis, viverra vitae sollicitudin at, iaculis sit amet neque. Sed dui urna, egestas at
+                odio id, viverra semper purus. Sed vestibulum magna sapien, non aliquet justo pulvinar vel. Nulla eu
+                imperdiet ipsum. Cras ut fermentum orci, eget porta velit. Vivamus nec nulla in lacus facilisis
+                fringilla.
+                Vivamus non ex eget quam sagittis cursus vitae eu ante. Quisque condimentum elit diam, non placerat
+                tortor consectetur a. Phasellus pretium sem et nunc tempus pharetra ac vitae arcu. Cras tristique, magna
+                dignissim dignissim ultrices, eros nunc cursus lorem, et placerat risus lectus ac lorem. Vivamus vel
+                libero neque. Vivamus dictum lacinia enim, eu accumsan sapien dictum at. Suspendisse in justo ut felis
+                faucibus dignissim. Etiam et tempus nisl, non tristique dolor. Fusce bibendum lorem ultrices massa
+                rutrum egestas. Cras at neque libero. Vivamus lacus felis, fermentum id ex in, hendrerit egestas massa.
+                Aenean enim nisl, mollis quis felis quis, ullamcorper facilisis elit. Duis sit amet dictum urna. Etiam
+                in dolor libero. Integer eu posuere orci, a scelerisque sem. Vivamus egestas vulputate tempus. Nunc eu
+                bibendum nibh. Aenean aliquet sollicitudin consequat. Class aptent taciti sociosqu ad litora torquent
+                per conubia nostra, per inceptos himenaeos. Ut faucibus egestas dolor, sed hendrerit sem pharetra at. Ut
+                dapibus maximus enim in efficitur. Vestibulum quis euismod risus, vel blandit quam.
+                Aenean nibh elit, semper ac interdum vel, interdum at odio. Quisque lacinia varius magna, ut viverra
+                justo pharetra ac. Fusce lorem ipsum, lacinia facilisis ornare eget, semper at erat. Curabitur a lacinia
+                nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Vivamus consequat ipsum eu justo lobortis, ac condimentum nisl dignissim. Cras imperdiet vehicula risus,
+                at molestie metus consectetur in.
+                Nam gravida, lectus molestie rutrum ullamcorper, dolor leo porta nunc, sed sagittis eros orci eu erat.
+                Ut eu justo in dui dictum lacinia. Duis blandit fermentum enim, vitae sollicitudin leo suscipit laoreet.
+                Donec ligula nibh, laoreet quis scelerisque vitae, condimentum sit amet dui. Sed sagittis arcu in nisl
+                pellentesque ullamcorper. Ut ultrices leo id turpis lacinia, ac sodales nunc finibus. Mauris pretium,
+                dui non auctor pretium, turpis felis scelerisque nunc, quis venenatis nulla neque id mi. Sed imperdiet
+                dictum nibh. Vestibulum lobortis tincidunt velit vel vulputate. Pellentesque rutrum eros non dui
+                gravida, nec facilisis arcu posuere. Pellentesque nec odio ut purus sollicitudin maximus. Duis gravida
+                lorem quis dapibus blandit. Vivamus eget commodo tellus. Aliquam sodales consequat sapien, at semper
+                arcu elementum sit amet. Suspendisse justo neque, finibus et tristique convallis, vehicula sit amet
+                diam.
+                In vel fringilla nibh. Morbi lacinia tellus vel enim aliquet varius. Praesent eu ipsum vel quam aliquam
+                tincidunt. Aliquam hendrerit at risus placerat egestas. Nullam consequat maximus vestibulum. Nulla
+                mollis, metus sed vulputate ornare, erat ipsum semper tellus, id venenatis purus odio vitae libero. Nunc
+                scelerisque dictum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut ante
+                rutrum, ornare enim a, suscipit mauris. Vivamus egestas eget quam vitae congue. Fusce in mi ligula. Nam
+                aliquam, nisi nec posuere posuere, urna libero consequat magna, lobortis euismod tortor mauris sit amet
+                lorem. Phasellus id leo mi.
+                Nulla hendrerit ligula id mattis tincidunt. In id orci vitae tortor gravida lobortis quis sed lorem.
+                Suspendisse potenti. Nam elementum sagittis eros rhoncus pulvinar. Integer sed purus lorem. Cras dapibus
+                leo ac fringilla elementum. Curabitur et dolor condimentum, hendrerit lacus a, commodo ligula. Donec
+                facilisis orci eget purus pretium euismod. Morbi facilisis imperdiet neque, id aliquam ante rhoncus eu.
+                Fusce consectetur sed mauris vitae scelerisque. Vestibulum eget lacus hendrerit, dignissim turpis sit
+                amet, finibus elit. Sed porttitor maximus nulla, ut commodo dui venenatis eget.
+                Donec venenatis neque scelerisque, tristique justo sed, tempor ante. In porttitor felis arcu, ac
+                ultrices diam tincidunt in. In pharetra ac nisi ut posuere. Sed ut nunc gravida, eleifend libero
+                tristique, vestibulum elit. In lacinia feugiat dolor. Nunc sit amet porttitor arcu. Praesent at dui nec
+                ligula lobortis volutpat. Nullam facilisis ex congue eros luctus blandit. Phasellus at cursus ligula.
+                Donec imperdiet sapien elementum luctus ullamcorper. Donec eget scelerisque quam, ac sagittis dui. Fusce
+                cursus tempus cursus. Ut rhoncus in magna non lobortis. Suspendisse tempus efficitur blandit. Aenean
+                blandit sapien fringilla augue volutpat interdum. Mauris aliquam euismod urna, vel semper orci facilisis
+                at.</div>
+            </div>
+            <div class="tab-pane fade elemento_tab" id="estandares-tab-pane" role="tabpanel"
+              aria-labelledby="estandares-tab" tabindex="0">
+              <div> Nuestros estándares Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin
+                diam eu libero malesuada porttitor nec a ligula. Praesent efficitur hendrerit massa, quis faucibus lacus
+                placerat quis. Phasellus posuere quam at ligula pharetra facilisis. Etiam et aliquet velit. Sed porta
+                felis non nisi dapibus, eget molestie ligula sollicitudin. Curabitur placerat imperdiet ante, id tempus
+                justo efficitur eget. Morbi sapien mauris, viverra eget ante id, semper feugiat arcu. Mauris commodo
+                augue magna, ut porta mauris malesuada nec. Sed lorem magna, finibus eu tincidunt vel, euismod non quam.
+                Pellentesque convallis, ex at viverra mattis, arcu quam semper nibh, non iaculis neque velit eu turpis.
+                Curabitur augue turpis, viverra vitae sollicitudin at, iaculis sit amet neque. Sed dui urna, egestas at
+                odio id, viverra semper purus. Sed vestibulum magna sapien, non aliquet justo pulvinar vel. Nulla eu
+                imperdiet ipsum. Cras ut fermentum orci, eget porta velit. Vivamus nec nulla in lacus facilisis
+                fringilla.
                 Vivamus non ex eget quam sagittis cursus vitae eu ante. Quisque condimentum elit diam, non placerat
                 tortor consectetur a. Phasellus pretium sem et nunc tempus pharetra ac vitae arcu. Cras tristique, magna
                 dignissim dignissim ultrices, eros nunc cursus lorem, et placerat risus lectus ac lorem. Vivamus vel
@@ -791,20 +838,22 @@
                 cursus tempus cursus. Ut rhoncus in magna non lobortis. Suspendisse tempus efficitur blandit. Aenean
                 blandit sapien fringilla augue volutpat interdum. Mauris aliquam euismod urna, vel semper orci facilisis
                 at.
+
               </div>
             </div>
-            <div class="tab-pane fade" id="estandares" role="tabpanel" aria-labelledby="estandares-tab">
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin diam eu libero malesuada
-                porttitor nec a ligula. Praesent efficitur hendrerit massa, quis faucibus lacus placerat quis. Phasellus
-                posuere quam at ligula pharetra facilisis. Etiam et aliquet velit. Sed porta felis non nisi dapibus,
-                eget molestie ligula sollicitudin. Curabitur placerat imperdiet ante, id tempus justo efficitur eget.
-                Morbi sapien mauris, viverra eget ante id, semper feugiat arcu. Mauris commodo augue magna, ut porta
-                mauris malesuada nec. Sed lorem magna, finibus eu tincidunt vel, euismod non quam. Pellentesque
-                convallis, ex at viverra mattis, arcu quam semper nibh, non iaculis neque velit eu turpis. Curabitur
-                augue turpis, viverra vitae sollicitudin at, iaculis sit amet neque. Sed dui urna, egestas at odio id,
-                viverra semper purus. Sed vestibulum magna sapien, non aliquet justo pulvinar vel. Nulla eu imperdiet
-                ipsum. Cras ut fermentum orci, eget porta velit. Vivamus nec nulla in lacus facilisis fringilla.
+            <div class="tab-pane fade elemento_tab" id="PerfilTerapeuta-tab-pane" role="tabpanel"
+              aria-labelledby="PerfilTerapeuta-tab" tabindex="0">
+              <div> Perfil del terapeuta AHRVP Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                sollicitudin diam eu libero malesuada porttitor nec a ligula. Praesent efficitur hendrerit massa, quis
+                faucibus lacus placerat quis. Phasellus posuere quam at ligula pharetra facilisis. Etiam et aliquet
+                velit. Sed porta felis non nisi dapibus, eget molestie ligula sollicitudin. Curabitur placerat imperdiet
+                ante, id tempus justo efficitur eget. Morbi sapien mauris, viverra eget ante id, semper feugiat arcu.
+                Mauris commodo augue magna, ut porta mauris malesuada nec. Sed lorem magna, finibus eu tincidunt vel,
+                euismod non quam. Pellentesque convallis, ex at viverra mattis, arcu quam semper nibh, non iaculis neque
+                velit eu turpis. Curabitur augue turpis, viverra vitae sollicitudin at, iaculis sit amet neque. Sed dui
+                urna, egestas at odio id, viverra semper purus. Sed vestibulum magna sapien, non aliquet justo pulvinar
+                vel. Nulla eu imperdiet ipsum. Cras ut fermentum orci, eget porta velit. Vivamus nec nulla in lacus
+                facilisis fringilla.
                 Vivamus non ex eget quam sagittis cursus vitae eu ante. Quisque condimentum elit diam, non placerat
                 tortor consectetur a. Phasellus pretium sem et nunc tempus pharetra ac vitae arcu. Cras tristique, magna
                 dignissim dignissim ultrices, eros nunc cursus lorem, et placerat risus lectus ac lorem. Vivamus vel
@@ -852,190 +901,334 @@
                 cursus tempus cursus. Ut rhoncus in magna non lobortis. Suspendisse tempus efficitur blandit. Aenean
                 blandit sapien fringilla augue volutpat interdum. Mauris aliquam euismod urna, vel semper orci facilisis
                 at.
+
               </div>
             </div>
-            <div class="tab-pane fade" id="perfil_terapeuta" role="tabpanel" aria-labelledby="perfil_terapeuta-tab">
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin diam eu libero malesuada
-                porttitor nec a ligula. Praesent efficitur hendrerit massa, quis faucibus lacus placerat quis. Phasellus
-                posuere quam at ligula pharetra facilisis. Etiam et aliquet velit. Sed porta felis non nisi dapibus,
-                eget molestie ligula sollicitudin. Curabitur placerat imperdiet ante, id tempus justo efficitur eget.
-                Morbi sapien mauris, viverra eget ante id, semper feugiat arcu. Mauris commodo augue magna, ut porta
-                mauris malesuada nec. Sed lorem magna, finibus eu tincidunt vel, euismod non quam. Pellentesque
-                convallis, ex at viverra mattis, arcu quam semper nibh, non iaculis neque velit eu turpis. Curabitur
-                augue turpis, viverra vitae sollicitudin at, iaculis sit amet neque. Sed dui urna, egestas at odio id,
-                viverra semper purus. Sed vestibulum magna sapien, non aliquet justo pulvinar vel. Nulla eu imperdiet
-                ipsum. Cras ut fermentum orci, eget porta velit. Vivamus nec nulla in lacus facilisis fringilla.
-                Vivamus non ex eget quam sagittis cursus vitae eu ante. Quisque condimentum elit diam, non placerat
-                tortor consectetur a. Phasellus pretium sem et nunc tempus pharetra ac vitae arcu. Cras tristique, magna
-                dignissim dignissim ultrices, eros nunc cursus lorem, et placerat risus lectus ac lorem. Vivamus vel
-                libero neque. Vivamus dictum lacinia enim, eu accumsan sapien dictum at. Suspendisse in justo ut felis
-                faucibus dignissim. Etiam et tempus nisl, non tristique dolor. Fusce bibendum lorem ultrices massa
-                rutrum egestas. Cras at neque libero. Vivamus lacus felis, fermentum id ex in, hendrerit egestas massa.
-                Aenean enim nisl, mollis quis felis quis, ullamcorper facilisis elit. Duis sit amet dictum urna. Etiam
-                in dolor libero. Integer eu posuere orci, a scelerisque sem. Vivamus egestas vulputate tempus. Nunc eu
-                bibendum nibh. Aenean aliquet sollicitudin consequat. Class aptent taciti sociosqu ad litora torquent
-                per conubia nostra, per inceptos himenaeos. Ut faucibus egestas dolor, sed hendrerit sem pharetra at. Ut
-                dapibus maximus enim in efficitur. Vestibulum quis euismod risus, vel blandit quam.
-                Aenean nibh elit, semper ac interdum vel, interdum at odio. Quisque lacinia varius magna, ut viverra
-                justo pharetra ac. Fusce lorem ipsum, lacinia facilisis ornare eget, semper at erat. Curabitur a lacinia
-                nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                Vivamus consequat ipsum eu justo lobortis, ac condimentum nisl dignissim. Cras imperdiet vehicula risus,
-                at molestie metus consectetur in.
-                Nam gravida, lectus molestie rutrum ullamcorper, dolor leo porta nunc, sed sagittis eros orci eu erat.
-                Ut eu justo in dui dictum lacinia. Duis blandit fermentum enim, vitae sollicitudin leo suscipit laoreet.
-                Donec ligula nibh, laoreet quis scelerisque vitae, condimentum sit amet dui. Sed sagittis arcu in nisl
-                pellentesque ullamcorper. Ut ultrices leo id turpis lacinia, ac sodales nunc finibus. Mauris pretium,
-                dui non auctor pretium, turpis felis scelerisque nunc, quis venenatis nulla neque id mi. Sed imperdiet
-                dictum nibh. Vestibulum lobortis tincidunt velit vel vulputate. Pellentesque rutrum eros non dui
-                gravida, nec facilisis arcu posuere. Pellentesque nec odio ut purus sollicitudin maximus. Duis gravida
-                lorem quis dapibus blandit. Vivamus eget commodo tellus. Aliquam sodales consequat sapien, at semper
-                arcu elementum sit amet. Suspendisse justo neque, finibus et tristique convallis, vehicula sit amet
-                diam.
-                In vel fringilla nibh. Morbi lacinia tellus vel enim aliquet varius. Praesent eu ipsum vel quam aliquam
-                tincidunt. Aliquam hendrerit at risus placerat egestas. Nullam consequat maximus vestibulum. Nulla
-                mollis, metus sed vulputate ornare, erat ipsum semper tellus, id venenatis purus odio vitae libero. Nunc
-                scelerisque dictum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut ante
-                rutrum, ornare enim a, suscipit mauris. Vivamus egestas eget quam vitae congue. Fusce in mi ligula. Nam
-                aliquam, nisi nec posuere posuere, urna libero consequat magna, lobortis euismod tortor mauris sit amet
-                lorem. Phasellus id leo mi.
-                Nulla hendrerit ligula id mattis tincidunt. In id orci vitae tortor gravida lobortis quis sed lorem.
-                Suspendisse potenti. Nam elementum sagittis eros rhoncus pulvinar. Integer sed purus lorem. Cras dapibus
-                leo ac fringilla elementum. Curabitur et dolor condimentum, hendrerit lacus a, commodo ligula. Donec
-                facilisis orci eget purus pretium euismod. Morbi facilisis imperdiet neque, id aliquam ante rhoncus eu.
-                Fusce consectetur sed mauris vitae scelerisque. Vestibulum eget lacus hendrerit, dignissim turpis sit
-                amet, finibus elit. Sed porttitor maximus nulla, ut commodo dui venenatis eget.
-                Donec venenatis neque scelerisque, tristique justo sed, tempor ante. In porttitor felis arcu, ac
-                ultrices diam tincidunt in. In pharetra ac nisi ut posuere. Sed ut nunc gravida, eleifend libero
-                tristique, vestibulum elit. In lacinia feugiat dolor. Nunc sit amet porttitor arcu. Praesent at dui nec
-                ligula lobortis volutpat. Nullam facilisis ex congue eros luctus blandit. Phasellus at cursus ligula.
-                Donec imperdiet sapien elementum luctus ullamcorper. Donec eget scelerisque quam, ac sagittis dui. Fusce
-                cursus tempus cursus. Ut rhoncus in magna non lobortis. Suspendisse tempus efficitur blandit. Aenean
-                blandit sapien fringilla augue volutpat interdum. Mauris aliquam euismod urna, vel semper orci facilisis
-                at.
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
     </section>
     <!-- /¿Quiénes somos? -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
-      <!-- Section Title -->
+    <!-- Hazte miembro -->
+    <section id="miembro" class="services section">
+      <!-- Título -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
+        <h2>Hazte miembro</h2>
       </div>
-      <!-- End Section Title -->
-
+      <!-- /Título -->
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
-              </a>
-              <p>
-                Provident nihil minus qui consequatur non omnis maiores. Eos
-                accusantium minus dolores iure perferendis tempore et
-                consequatur.
-              </p>
-            </div>
-          </div>
-          <!-- End Service Item -->
+        <div class="container-fluid">
+          <div class="container">
+            <div class="container-fluid">
+              <div class="row tab-vertical">
+                <div class="d-flex align-items-start">
+                  <div class="nav flex-column nav-pills me-3 col-sm-auto bg-light min-vh-70 tabs-style-iconbox"
+                    id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto   min-vh-70
+                  justify-content-between w-100 px-3 align-items-center">
+                      <li class="nav-item ">
+                        <a class="nav-link py-3 px-2 active icon icon-home" id="v-pills-Afiliacion-tab"
+                          data-bs-toggle="pill" data-bs-target="#v-pills-Afiliacion" type="button" role="tab"
+                          aria-controls="v-pills-Afiliacion" aria-selected="true">
+                          <i class="bi bi-emoji-smile-fill fs-1"></i>
+                          Afiliación como miembro
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-link py-3 px-2" id="v-pills-certificacion-tab" data-bs-toggle="pill"
+                          data-bs-target="#v-pills-certificacion" type="button" role="tab"
+                          aria-controls="v-pills-certificacion" aria-selected="false">
+                          <i class="bi bi-patch-check-fill fs-1"></i>
+                          ¿Qué es la certificación?
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-link py-3 px-2" id="v-pills-Testimonios-tab" data-bs-toggle="pill"
+                          data-bs-target="#v-pills-Testimonios" type="button" role="tab"
+                          aria-controls="v-pills-Testimonios" aria-selected="false">
+                          <i class="bi bi-chat-heart-fill fs-1"></i>
+                          Testimonios
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-link py-3 px-2" id="v-pills-membresia-tab" data-bs-toggle="pill"
+                          data-bs-target="#v-pills-membresia" type="button" role="tab" aria-controls="v-pills-membresia"
+                          aria-selected="false">
+                          <i class="bi bi-patch-check-fill fs-1"></i>
+                          Tipos de membresía
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content col-sm p-3 min-vh-70" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-Afiliacion" role="tabpanel"
+                      aria-labelledby="v-pills-Afiliacion-tab" tabindex="0">
+                      <div>
+                        <h3>Afiliación como miembro</h3>
+                        <h4>Beneficios</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin diam eu libero
+                        malesuada porttitor nec a ligula. Praesent efficitur hendrerit massa, quis faucibus lacus
+                        placerat
+                        quis. Phasellus posuere quam at ligula pharetra facilisis. Etiam et aliquet velit. Sed porta
+                        felis
+                        non nisi dapibus, eget molestie ligula sollicitudin. Curabitur placerat imperdiet ante, id
+                        tempus
+                        justo efficitur eget. Morbi sapien mauris, viverra eget ante id, semper feugiat arcu. Mauris
+                        commodo
+                        augue magna, ut porta mauris malesuada nec. Sed lorem magna, finibus eu tincidunt vel, euismod
+                        non
+                        quam. Pellentesque convallis, ex at viverra mattis, arcu quam semper nibh, non iaculis neque
+                        velit
+                        eu turpis. Curabitur augue turpis, viverra vitae sollicitudin at, iaculis sit amet neque. Sed
+                        dui
+                        urna, egestas at odio id, viverra semper purus. Sed vestibulum magna sapien, non aliquet justo
+                        pulvinar vel. Nulla eu imperdiet ipsum. Cras ut fermentum orci, eget porta velit. Vivamus nec
+                        nulla
+                        in lacus facilisis fringilla.
+                        Vivamus non ex eget quam sagittis cursus vitae eu ante. Quisque condimentum elit diam, non
+                        placerat
+                        tortor consectetur a. Phasellus pretium sem et nunc tempus pharetra ac vitae arcu. Cras
+                        tristique,
+                        magna dignissim dignissim ultrices, eros nunc cursus lorem, et placerat risus lectus ac lorem.
+                        Vivamus vel libero neque. Vivamus dictum lacinia enim, eu accumsan sapien dictum at. Suspendisse
+                        in
+                        justo ut felis faucibus dignissim. Etiam et tempus nisl, non tristique dolor. Fusce bibendum
+                        lorem
+                        ultrices massa rutrum egestas. Cras at neque libero. Vivamus lacus felis, fermentum id ex in,
+                        hendrerit egestas massa.
+                        Aenean enim nisl, mollis quis felis quis, ullamcorper facilisis elit. Duis sit amet dictum urna.
+                        Etiam in dolor libero. Integer eu posuere orci, a scelerisque sem. Vivamus egestas vulputate
+                        tempus.
+                        Nunc eu bibendum nibh. Aenean aliquet sollicitudin consequat. Class aptent taciti sociosqu ad
+                        litora
+                        torquent per conubia nostra, per inceptos himenaeos. Ut faucibus egestas dolor, sed hendrerit
+                        sem
+                        pharetra at. Ut dapibus maximus enim in efficitur. Vestibulum quis euismod risus, vel blandit
+                        quam.
+                        Aenean nibh elit, semper ac interdum vel, interdum at odio. Quisque lacinia varius magna, ut
+                        viverra
+                        justo pharetra ac. Fusce lorem ipsum, lacinia facilisis ornare eget, semper at erat. Curabitur a
+                        lacinia nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                        himenaeos. Vivamus consequat ipsum eu justo lobortis, ac condimentum nisl dignissim. Cras
+                        imperdiet
+                        vehicula risus, at molestie metus consectetur in.
+                        Nam gravida, lectus molestie rutrum ullamcorper, dolor leo porta nunc, sed sagittis eros orci eu
+                        erat. Ut eu justo in dui dictum lacinia. Duis blandit fermentum enim, vitae sollicitudin leo
+                        suscipit laoreet. Donec ligula nibh, laoreet quis scelerisque vitae, condimentum sit amet dui.
+                        Sed
+                        sagittis arcu in nisl pellentesque ullamcorper. Ut ultrices leo id turpis lacinia, ac sodales
+                        nunc
+                        finibus. Mauris pretium, dui non auctor pretium, turpis felis scelerisque nunc, quis venenatis
+                        nulla
+                        neque id mi. Sed imperdiet dictum nibh. Vestibulum lobortis tincidunt velit vel vulputate.
+                        Pellentesque rutrum eros non dui gravida, nec facilisis arcu posuere. Pellentesque nec odio ut
+                        purus
+                        sollicitudin maximus. Duis gravida lorem quis dapibus blandit. Vivamus eget commodo tellus.
+                        Aliquam
+                        sodales consequat sapien, at semper arcu elementum sit amet. Suspendisse justo neque, finibus et
+                        tristique convallis, vehicula sit amet diam.
+                        In vel fringilla nibh. Morbi lacinia tellus vel enim aliquet varius. Praesent eu ipsum vel quam
+                        aliquam tincidunt. Aliquam hendrerit at risus placerat egestas. Nullam consequat maximus
+                        vestibulum.
+                        Nulla mollis, metus sed vulputate ornare, erat ipsum semper tellus, id venenatis purus odio
+                        vitae
+                        libero. Nunc scelerisque dictum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Etiam ut ante rutrum, ornare enim a, suscipit mauris. Vivamus egestas eget quam vitae
+                        congue.
+                        Fusce in mi ligula. Nam aliquam, nisi nec posuere posuere, urna libero consequat magna, lobortis
+                        euismod tortor mauris sit amet lorem. Phasellus id leo mi.
+                        Nulla hendrerit ligula id mattis tincidunt. In id orci vitae tortor gravida lobortis quis sed
+                        lorem.
+                        Suspendisse potenti. Nam elementum sagittis eros rhoncus pulvinar. Integer sed purus lorem. Cras
+                        dapibus leo ac fringilla elementum. Curabitur et dolor condimentum, hendrerit lacus a, commodo
+                        ligula. Donec facilisis orci eget purus pretium euismod. Morbi facilisis imperdiet neque, id
+                        aliquam
+                        ante rhoncus eu. Fusce consectetur sed mauris vitae scelerisque. Vestibulum eget lacus
+                        hendrerit,
+                        dignissim turpis sit amet, finibus elit. Sed porttitor maximus nulla, ut commodo dui venenatis
+                        eget.
+                        Donec venenatis neque scelerisque, tristique justo sed, tempor ante. In porttitor felis arcu, ac
+                        ultrices diam tincidunt in. In pharetra ac nisi ut posuere. Sed ut nunc gravida, eleifend libero
+                        tristique, vestibulum elit. In lacinia feugiat dolor. Nunc sit amet porttitor arcu. Praesent at
+                        dui
+                        nec ligula lobortis volutpat. Nullam facilisis ex congue eros luctus blandit. Phasellus at
+                        cursus
+                        ligula. Donec imperdiet sapien elementum luctus ullamcorper. Donec eget scelerisque quam, ac
+                        sagittis dui. Fusce cursus tempus cursus. Ut rhoncus in magna non lobortis. Suspendisse tempus
+                        efficitur blandit. Aenean blandit sapien fringilla augue volutpat interdum. Mauris aliquam
+                        euismod
+                        urna, vel semper orci facilisis at.
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-certificacion" role="tabpanel"
+                      aria-labelledby="v-pills-certificacion-tab" tabindex="0">
+                      <div>
+                        <h3>Qué es la certificación</h3>
+                        <h4>Beneficios</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin diam eu libero
+                        malesuada porttitor nec a ligula. Praesent efficitur hendrerit massa, quis faucibus lacus
+                        placerat
+                        quis. Phasellus posuere quam at ligula pharetra facilisis. Etiam et aliquet velit. Sed porta
+                        felis
+                        non nisi dapibus, eget molestie ligula sollicitudin. Curabitur placerat imperdiet ante, id
+                        tempus
+                        justo efficitur eget. Morbi sapien mauris, viverra eget ante id, semper feugiat arcu. Mauris
+                        commodo
+                        augue magna, ut porta mauris malesuada nec. Sed lorem magna, finibus eu tincidunt vel, euismod
+                        non
+                        quam. Pellentesque convallis, ex at viverra mattis, arcu quam semper nibh, non iaculis neque
+                        velit
+                        eu turpis. Curabitur augue turpis, viverra vitae sollicitudin at, iaculis sit amet neque. Sed
+                        dui
+                        urna, egestas at odio id, viverra semper purus. Sed vestibulum magna sapien, non aliquet justo
+                        pulvinar vel. Nulla eu imperdiet ipsum. Cras ut fermentum orci, eget porta velit. Vivamus nec
+                        nulla
+                        in lacus facilisis fringilla.
+                        Vivamus non ex eget quam sagittis cursus vitae eu ante. Quisque condimentum elit diam, non
+                        placerat
+                        tortor consectetur a. Phasellus pretium sem et nunc tempus pharetra ac vitae arcu. Cras
+                        tristique,
+                        magna dignissim dignissim ultrices, eros nunc cursus lorem, et placerat risus lectus ac lorem.
+                        Vivamus vel libero neque. Vivamus dictum lacinia enim, eu accumsan sapien dictum at. Suspendisse
+                        in
+                        justo ut felis faucibus dignissim. Etiam et tempus nisl, non tristique dolor. Fusce bibendum
+                        lorem
+                        ultrices massa rutrum egestas. Cras at neque libero. Vivamus lacus felis, fermentum id ex in,
+                        hendrerit egestas massa.
+                        Aenean enim nisl, mollis quis felis quis, ullamcorper facilisis elit. Duis sit amet dictum urna.
+                        Etiam in dolor libero. Integer eu posuere orci, a scelerisque sem. Vivamus egestas vulputate
+                        tempus.
+                        Nunc eu bibendum nibh. Aenean aliquet sollicitudin consequat. Class aptent taciti sociosqu ad
+                        litora
+                        torquent per conubia nostra, per inceptos himenaeos. Ut faucibus egestas dolor, sed hendrerit
+                        sem
+                        pharetra at. Ut dapibus maximus enim in efficitur. Vestibulum quis euismod risus, vel blandit
+                        quam.
+                        Aenean nibh elit, semper ac interdum vel, interdum at odio. Quisque lacinia varius magna, ut
+                        viverra
+                        justo pharetra ac. Fusce lorem ipsum, lacinia facilisis ornare eget, semper at erat. Curabitur a
+                        lacinia nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                        himenaeos. Vivamus consequat ipsum eu justo lobortis, ac condimentum nisl dignissim. Cras
+                        imperdiet
+                        vehicula risus, at molestie metus consectetur in.
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
-              </a>
-              <p>
-                Ut autem aut autem non a. Sint sint sit facilis nam iusto
-                sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
-              </p>
-            </div>
-          </div>
-          <!-- End Service Item -->
+                        <h4>Requisitos</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin diam eu libero
+                        malesuada porttitor nec a ligula. Praesent efficitur hendrerit massa, quis faucibus lacus
+                        placerat
+                        quis. Phasellus posuere quam at ligula pharetra facilisis. Etiam et aliquet velit. Sed porta
+                        felis
+                        non nisi dapibus, eget molestie ligula sollicitudin. Curabitur placerat imperdiet ante, id
+                        tempus
+                        justo efficitur eget. Morbi sapien mauris, viverra eget ante id, semper feugiat arcu. Mauris
+                        commodo
+                        augue magna, ut porta mauris malesuada nec. Sed lorem magna, finibus eu tincidunt vel, euismod
+                        non
+                        quam. Pellentesque convallis, ex at viverra mattis, arcu quam semper nibh, non iaculis neque
+                        velit
+                        eu turpis. Curabitur augue turpis, viverra vitae sollicitudin at, iaculis sit amet neque. Sed
+                        dui
+                        urna, egestas at odio id, viverra semper purus. Sed vestibulum magna sapien, non aliquet justo
+                        pulvinar vel. Nulla eu imperdiet ipsum. Cras ut fermentum orci, eget porta velit. Vivamus nec
+                        nulla
+                        in lacus facilisis fringilla.
+                        Vivamus non ex eget quam sagittis cursus vitae eu ante. Quisque condimentum elit diam, non
+                        placerat
+                        tortor consectetur a. Phasellus pretium sem et nunc tempus pharetra ac vitae arcu. Cras
+                        tristique,
+                        magna dignissim dignissim ultrices, eros nunc cursus lorem, et placerat risus lectus ac lorem.
+                        Vivamus vel libero neque. Vivamus dictum lacinia enim, eu accumsan sapien dictum at. Suspendisse
+                        in
+                        justo ut felis faucibus dignissim. Etiam et tempus nisl, non tristique dolor. Fusce bibendum
+                        lorem
+                        ultrices massa rutrum egestas. Cras at neque libero. Vivamus lacus felis, fermentum id ex in,
+                        hendrerit egestas massa.
+                        Aenean enim nisl, mollis quis felis quis, ullamcorper facilisis elit. Duis sit amet dictum urna.
+                        Etiam in dolor libero. Integer eu posuere orci, a scelerisque sem. Vivamus egestas vulputate
+                        tempus.
+                        Nunc eu bibendum nibh. Aenean aliquet sollicitudin consequat. Class aptent taciti sociosqu ad
+                        litora
+                        torquent per conubia nostra, per inceptos himenaeos. Ut faucibus egestas dolor, sed hendrerit
+                        sem
+                        pharetra at. Ut dapibus maximus enim in efficitur. Vestibulum quis euismod risus, vel blandit
+                        quam.
+                        Aenean nibh elit, semper ac interdum vel, interdum at odio. Quisque lacinia varius magna, ut
+                        viverra
+                        justo pharetra ac. Fusce lorem ipsum, lacinia facilisis ornare eget, semper at erat. Curabitur a
+                        lacinia nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                        himenaeos. Vivamus consequat ipsum eu justo lobortis, ac condimentum nisl dignissim. Cras
+                        imperdiet
+                        vehicula risus, at molestie metus consectetur in.
+                        Nam gravida, lectus molestie rutrum ullamcorper, dolor leo porta nunc, sed sagittis eros orci eu
+                        erat. Ut eu justo in dui dictum lacinia. Duis blandit fermentum enim, vitae sollicitudin leo
+                        suscipit laoreet. Donec ligula nibh, laoreet quis scelerisque vitae, condimentum sit amet dui.
+                        Sed
+                        sagittis arcu in nisl pellentesque ullamcorper. Ut ultrices leo id turpis lacinia, ac sodales
+                        nunc
+                        finibus. Mauris pretium, dui non auctor pretium, turpis felis scelerisque nunc, quis venenatis
+                        nulla
+                        neque id mi. Sed imperdiet dictum nibh. Vestibulum lobortis tincidunt velit vel vulputate.
+                        Pellentesque rutrum eros non dui gravida, nec facilisis arcu posuere. Pellentesque nec odio ut
+                        purus
+                        sollicitudin maximus. Duis gravida lorem quis dapibus blandit. Vivamus eget commodo tellus.
+                        Aliquam
+                        sodales consequat sapien, at semper arcu elementum sit amet. Suspendisse justo neque, finibus et
+                        tristique convallis, vehicula sit amet diam.
+                        In vel fringilla nibh. Morbi lacinia tellus vel enim aliquet varius. Praesent eu ipsum vel quam
+                        aliquam tincidunt. Aliquam hendrerit at risus placerat egestas. Nullam consequat maximus
+                        vestibulum.
+                        Nulla mollis, metus sed vulputate ornare, erat ipsum semper tellus, id venenatis purus odio
+                        vitae
+                        libero. Nunc scelerisque dictum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Etiam ut ante rutrum, ornare enim a, suscipit mauris. Vivamus egestas eget quam vitae
+                        congue.
+                        Fusce in mi ligula. Nam aliquam, nisi nec posuere posuere, urna libero consequat magna, lobortis
+                        euismod tortor mauris sit amet lorem. Phasellus id leo mi.
+                        Nulla hendrerit ligula id mattis tincidunt. In id orci vitae tortor gravida lobortis quis sed
+                        lorem.
+                        Suspendisse potenti. Nam elementum sagittis eros rhoncus pulvinar. Integer sed purus lorem. Cras
+                        dapibus leo ac fringilla elementum. Curabitur et dolor condimentum, hendrerit lacus a, commodo
+                        ligula. Donec facilisis orci eget purus pretium euismod. Morbi facilisis imperdiet neque, id
+                        aliquam
+                        ante rhoncus eu. Fusce consectetur sed mauris vitae scelerisque. Vestibulum eget lacus
+                        hendrerit,
+                        dignissim turpis sit amet, finibus elit. Sed porttitor maximus nulla, ut commodo dui venenatis
+                        eget.
+                        Donec venenatis neque scelerisque, tristique justo sed, tempor ante. In porttitor felis arcu, ac
+                        ultrices diam tincidunt in. In pharetra ac nisi ut posuere. Sed ut nunc gravida, eleifend libero
+                        tristique, vestibulum elit. In lacinia feugiat dolor. Nunc sit amet porttitor arcu. Praesent at
+                        dui
+                        nec ligula lobortis volutpat. Nullam facilisis ex congue eros luctus blandit. Phasellus at
+                        cursus
+                        ligula. Donec imperdiet sapien elementum luctus ullamcorper. Donec eget scelerisque quam, ac
+                        sagittis dui. Fusce cursus tempus cursus. Ut rhoncus in magna non lobortis. Suspendisse tempus
+                        efficitur blandit. Aenean blandit sapien fringilla augue volutpat interdum. Mauris aliquam
+                        euismod
+                        urna, vel semper orci facilisis at.
+                      </div>
+                    </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
-              </a>
-              <p>
-                Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
-                Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
-              </p>
-            </div>
-          </div>
-          <!-- End Service Item -->
+                    <div class="tab-pane fade" id="v-pills-Testimonios" role="tabpanel"
+                      aria-labelledby="v-pills-Testimonios-tab" tabindex="0">
+                      <div>...Testimonios</div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-membresia" role="tabpanel"
+                      aria-labelledby="v-pills-membresia-tab" tabindex="0">
+                      <div>...Tipos de membresía</div>
+                    </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
+                  </div>
+                </div>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>
-                Non et temporibus minus omnis sed dolor esse consequatur.
-                Cupiditate sed error ea fuga sit provident adipisci neque.
-              </p>
-              <a href="#" class="stretched-link"></a>
             </div>
           </div>
-          <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>
-                Cumque et suscipit saepe. Est maiores autem enim facilis ut
-                aut ipsam corporis aut. Sed animi at autem alias eius labore.
-              </p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>
-          <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>
-                Hic molestias ea quibusdam eos. Fugiat enim doloremque aut
-                neque non et debitis iure. Corrupti recusandae ducimus enim.
-              </p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>
-          <!-- End Service Item -->
         </div>
       </div>
+
     </section>
     <!-- /Services Section -->
 
@@ -1605,7 +1798,7 @@
     <!-- /Recent Posts Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
+    <section id="PerfilTerapeuta" class="PerfilTerapeuta section light-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
@@ -1648,7 +1841,7 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+            <form action="forms/PerfilTerapeuta.php" method="post" class="php-email-form" data-aos="fade-up"
               data-aos-delay="200">
               <div class="row gy-4">
                 <div class="col-md-6">
@@ -1710,7 +1903,7 @@
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you've purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <!-- Purchase the pro version with working PHP/AJAX PerfilTerapeuta form: [buy-url] -->
           Designed by
           <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed
           by <a href=“https://themewagon.com>ThemeWagon
@@ -1734,10 +1927,12 @@
   <script src="recursos/complementos/purecounter/purecounter_vanilla.js"></script>
   <script src="recursos/complementos/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="recursos/complementos/isotope-layout/isotope.pkgd.min.js"></script>
+
   <script src="recursos/complementos/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
   <script src="recursos/js/main.js"></script>
+
 </body>
 
 </html>
