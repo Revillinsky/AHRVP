@@ -335,6 +335,9 @@ h6 {
   border-radius: 50px;
   margin-right: 15px;
 }
+.testimonial-md > .swiper-slide > .testimonial-item {
+  min-height: 450px;
+}
 
 .testimonials .testimonial-item h3 {
   font-size: 18px;
@@ -402,7 +405,11 @@ h6 {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
-
+@media (min-width: 767px) and (max-width: 1200px) {
+  .testimonial-md > .swiper-slide > .testimonial-item {
+    min-height: 301px;
+  }
+}
 @media (max-width: 767px) {
   .testimonials .testimonial-wrap {
     padding-left: 0;
@@ -412,7 +419,9 @@ h6 {
     padding: 30px;
     margin: 15px;
   }
-
+  .testimonial-md > .swiper-slide > .testimonial-item {
+    min-height: auto;
+  }
   .testimonials .testimonial-item .testimonial-img {
     position: static;
     left: auto;
@@ -1502,10 +1511,97 @@ section,
   min-width: 100%;
 }
 
-/*****************************/
-/* Icon box */
-/*****************************/
+/* Pestañas Verticales
+------------------------------*/
+.tab_vertical_AHRVP > ul {
+  position: sticky;
+  top: 0;
+}
+.tab_vertical_AHRVP > li {
+  display: block;
+  padding-bottom: 10%;
+}
 
+.pegajoso {
+  align-self: start;
+  position: sticky;
+  top: 10%;
+  z-index: 1020;
+}
+
+.tab_vertical_AHRVP > li :hover {
+  position: relative;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  line-height: 100px;
+  background-color: #005d8b;
+}
+.tab_vertical_AHRVP > li > a {
+  display: flex;
+  align-items: center;
+  border: 1px solid #005d8b;
+  border-radius: 10px;
+  color: #005d8b;
+  font-weight: bold;
+  line-height: 100px;
+  position: relative;
+  width: 100%;
+  max-height: 100px;
+}
+
+.tab_vertical_AHRVP > li > a.active {
+  position: relative;
+  border-radius: 0px;
+  color: white;
+  background-color: #005d8b;
+}
+
+.tab_vertical_AHRVP > li > a.active::after {
+  content: "";
+  position: absolute;
+  left: 93.6%;
+  width: 0;
+  height: 0;
+  /* esta es la parte importante */
+  border: transparent solid 50px;
+  border-left-color: #005d8b;
+}
+
+.li-icon {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 2.5rem;
+  max-width: 100%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .li-icon {
+    padding-right: 0.3rem;
+    padding-left: 0rem;
+    font-size: 1.8rem;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .tab_vertical_AHRVP > li > a {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    line-height: 1.4;
+    min-height: 150px;
+    text-align: center;
+  }
+  .tab_vertical_AHRVP > li :hover {
+    line-height: 1.4;
+  }
+  .tab_vertical_AHRVP > li > a.active::after {
+    top: 0;
+    /* width: 0; */
+    height: 53px;
+    border: transparent solid 27px;
+    border-left-color: #005d8b;
+  }
+}
 @media (max-width: 992px) {
   .cont_tabs .tabs_aspecto ul {
     display: -webkit-box;
@@ -1530,6 +1626,183 @@ section,
   .cont_tabs .tabs_aspecto ul li button {
     min-width: 100%;
   }
+  .tab_vertical_AHRVP {
+    padding: 0;
+    justify-items: center;
+    max-width: 100%;
+  }
+  .tab_vertical_AHRVP > li {
+    width: 25%;
+    padding: 0 0 10% 2%;
+    background-color: #ffffff8f;
+  }
+  .li-icon {
+    font-size: 2rem;
+  }
+
+  .tab_vertical_AHRVP > li > a.active:after {
+    content: "";
+    top: 85%;
+    border: transparent solid 27px;
+    border-left-color: transparent;
+    transform: rotate(180deg);
+    background-color: #005d8b;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+    display: block;
+    height: 2em;
+    left: 48%;
+    margin-left: -2em;
+    position: absolute;
+    width: 4em;
+  }
+
+  .tab_vertical_AHRVP > li > a.active:before {
+    content: "";
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 0 0.5em 0.5em 0;
+    bottom: -1em;
+    display: block;
+    height: 1em;
+    left: 51%;
+    margin-left: -0.75em;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 1em;
+    font-weight: 100;
+    font-size: 0.75rem;
+    z-index: 1;
+  }
+}
+@media (max-width: 500px) {
+  .tab_vertical_AHRVP > li > a {
+    font-weight: 100;
+    font-size: 0.75rem;
+  }
+  .tab_vertical_AHRVP > li > a.active:before {
+    font-weight: 100;
+    font-size: 0.75rem;
+  }
+}
+
+/* Membresias
+------------------------------*/
+.membresia .membresia-item {
+  position: relative;
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 90px rgba(0, 0, 0, 0.1);
+  padding: 4% 0;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid var(--accent-color);
+}
+
+.membresia .membresia-item h3 {
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.membresia .membresia-item h4 {
+  color: var(--accent-color);
+  font-size: 42px;
+  font-family: var(--default-font);
+  font-weight: 500;
+}
+
+.membresia .membresia-item h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.membresia .membresia-item h4 span {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-size: 16px;
+  font-weight: 300;
+}
+.membresia-item > img {
+  width: auto;
+  max-height: 30%;
+  position: absolute;
+  top: -74px;
+  right: 0;
+  height: 100%;
+}
+.cont_membresia > .row {
+  padding: 0% 0% 10% 0;
+}
+.cont_detalles_memb {
+  padding: 0 20%;
+}
+.cont_membresia > span {
+  display: block;
+  text-align: justify;
+}
+
+.membresia .membresia-item ul {
+  padding: 20px 0;
+  list-style: none;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.membresia .membresia-item ul li {
+  padding-bottom: 16px;
+}
+
+.membresia .membresia-item ul .na {
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  text-decoration: line-through;
+}
+
+.membresia .membresia-item .btn-wrap {
+  padding: 15px;
+  text-align: center;
+}
+
+.membresia .membresia-item .btn-buy {
+  color: var(--accent-color);
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  display: inline-block;
+  padding: 10px 40px 12px 40px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.membresia .membresia-item .btn-buy:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.membresia .recommended .btn-buy {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.membresia .recommended .btn-buy:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.membresia .recommended-badge {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 13px;
+  padding: 3px 25px 6px 25px;
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  color: var(--accent-color);
+  border-radius: 50px;
 }
 
 /*--------------------------------------------------------------

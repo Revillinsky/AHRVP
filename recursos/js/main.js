@@ -106,7 +106,7 @@
     AOS.init({
       duration: 600,
       easing: "ease-in-out",
-      once: true,
+      once: false,
       mirror: false,
     });
   }
@@ -201,6 +201,17 @@
    * Pestañas
    */
 
+  document.querySelectorAll(".item_vertical a").forEach((faqItem) => {
+    faqItem.addEventListener("click", () => {
+      const elementoInicial = document.getElementById("miembro");
+      const posicionGuardada = elementoInicial.scrollTop;
+      console.log("Posición guardada:", posicionGuardada);
+      elementoInicial.scrollTop = posicionGuardada;
+      elementoInicial.scrollIntoView({ behavior: "instant" });
+      AOS.refresh();
+    });
+  });
+
   /**
    * Init swiper sliders
    */
@@ -227,13 +238,10 @@
       },
     },
   };
+
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
       let config = conf_swiper;
-      //  let config = JSON.parse(
-      //        swiperElement.querySelector(".swiper-config").innerHTML.trim()
-
-      //     );
       if (swiperElement.classList.contains("swiper-tab")) {
         initSwiperWithCustomPagination(swiperElement, config);
       } else {
