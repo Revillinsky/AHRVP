@@ -41,12 +41,19 @@
           <li>
             <a href="#TRVP">Regresión a Vidas Pasadas</a>
           </li>
-          <li><a href="#quienes_somos">¿Quiénes somos?</a></li>
-          <li><a href="#services">Directorio de Terapeutas</a></li>
-          <li><a href="#portfolio">Contacto</a></li>
-          <!-- <li><a href="#pricing">Pricing</a></li>
-            <li><a href="blog.html">Blog</a></li> -->
+          <!-- <li><a href="#quienes_somos">¿Quiénes somos?</a></li> -->
           <li class="dropdown">
+            <a href="#quienes_somos"><span>¿Quiénes somos?</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#Historia">Historia de la fundación</a></li>
+              <li><a href="#Junta_directiva">Junta Directiva</a></li>
+              <li><a href="#integridad">Integridad de la asociación</a></li>
+            </ul>
+          </li>
+          <li><a href="#Terapeutas">Directorio de Terapeutas</a></li>
+          <li><a href="#portfolio">Contacto</a></li>
+          <!-- <li class="dropdown">
             <a href="#"><span>Dropdown</span>
               <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -66,7 +73,7 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -328,7 +335,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="centrado">
-                      <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
+                      <img src="recursos/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
                       <h3>John Larson</h3>
                       <h4>Entrepreneur</h4>
                       <div class="stars">
@@ -469,7 +476,7 @@
       </div>
       <!-- /Título -->
       <!-- Historia -->
-      <div class="container fondo-lectura-negro">
+      <div id="Historia" class="container fondo-lectura-negro">
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-12 text-xl-start">
             <h3>Historia de la fundación de la AHRVP</h3>
@@ -583,7 +590,7 @@
       <!-- /Historia -->
       <div class="separador"></div>
       <!-- Directiva -->
-      <div class="container fondo-lectura-negro">
+      <div id="Junta_directiva" class="container fondo-lectura-negro">
         <h3>Junta Directiva</h3>
         <div class="row">
           <div class="col-xl-12 text-center text-xl-start">
@@ -680,7 +687,7 @@
       <!-- /Directiva -->
       <div class="separador"></div>
       <!-- Integridad -->
-      <div id="etica" class="container fondo-lectura-negro">
+      <div id="integridad" class="container fondo-lectura-negro">
         <!-- Titulo-->
         <div class="container" data-aos="fade-up">
           <h2>Integridad de la asociación</h2>
@@ -921,7 +928,7 @@
       <div class="container">
         <div class="cont_tabs">
           <div class="row d-flex align-items-start">
-            <div class="nav flex-column nav-pills col-xl-3 col-lg-4 col-md-3 pegajoso" id="tab" role="tablist">
+            <div class="nav flex-column nav-pills col-xl-3 col-lg-4 col-md-3 menu_estatico" id="tab" role="tablist">
               <ul
                 class="nav nav-pills nav-flush flex-md-column flex-row flex-nowrap justify-content-between px-3 tab_vertical_AHRVP">
                 <li class="nav-item item_vertical">
@@ -939,8 +946,9 @@
                   </a>
                 </li>
                 <li class="item_vertical">
-                  <a class="py-3 px-2" id="Testimonios-tab" data-bs-toggle="pill" data-bs-target="#Testimonios"
-                    type="button" role="tab" aria-controls="Testimonios" aria-selected="false">
+                  <a class="py-3 px-2 swiperInTab" id="Testimonios-tab" data-bs-toggle="pill"
+                    data-bs-target="#Testimonios" type="button" role="tab" aria-controls="Testimonios"
+                    aria-selected="false">
                     <i class="bi bi-chat-heart-fill li-icon"></i>
                     Testimonios
                   </a>
@@ -957,7 +965,7 @@
             <div class="tab-content p-3 col-xl-9 col-lg-8 col-md-9" id="tabContent">
               <div class="tab-pane fade show active" id="Afiliacion" role="tabpanel" aria-labelledby="Afiliacion-tab"
                 tabindex="0">
-                <div>
+                <div class="cont_texto">
                   <h3>Afiliación como miembro</h3>
                   <h4>Beneficios</h4>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin diam eu libero
@@ -1056,7 +1064,7 @@
               </div>
               <div class="tab-pane fade" id="certificacion" role="tabpanel" aria-labelledby="certificacion-tab"
                 tabindex="1">
-                <div>
+                <div class="cont_texto">
                   <h3>Qué es la certificación</h3>
                   <h4>Beneficios</h4>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin diam eu libero
@@ -1205,10 +1213,10 @@
                 tabindex="2">
                 <div class="container testimonials">
                   <h3>Testimonios de miembros</h3>
-                  <div id="testim_2" class="swiper init-swiper ">
-                    <div class="swiper-wrapper testimonial-md">
+                  <div id="testim_2" class="swiper init-swiper swiperInTab">
+                    <div class="swiper-wrapper testimonial-md "> <!---->
                       <div class="swiper-slide">
-                        <div class="testimonial-item ">
+                        <div class="testimonial-item">
                           <div class="centrado">
                             <h3>Saul Goodman</h3>
                           </div>
@@ -1291,7 +1299,7 @@
                       <div class="swiper-slide">
                         <div class="testimonial-item">
                           <div class="centrado">
-                            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
+                            <img src="recursos/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
                             <h3>John Larson</h3>
                             <h4>Entrepreneur</h4>
                             <div class="stars">
@@ -1306,6 +1314,28 @@
                               irure aliqua veniam tempor noster veniam enim culpa
                               labore duis sunt culpa nulla illum cillum fugiat legam
                               esse veniam culpa fore nisi cillum quid.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <div class="centrado">
+                            <img src="recursos/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="" />
+                            <h3>Jena Karlis</h3>
+                            <h4>Store Owner</h4>
+                            <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                            </div>
+                          </div>
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>Enim nisi quem export duis labore cillum quae magna
+                              enim sint quorum nulla quem veniam duis minim tempor
+                              labore quem eram duis noster aute amet eram fore quis
+                              sint minim.</span>
                             <i class="bi bi-quote quote-icon-right"></i>
                           </p>
                         </div>
@@ -1438,7 +1468,130 @@
         </div>
       </div>
     </section>
-    <!-- /Services Section -->
+    <!-- /Hazte miembro  -->
+    <!-- Terapeutas -->
+    <section id="Terapeutas" class="terapeuta section dark-background">
+      <img id="fondo" src="recursos/img/fondos/Terapeutas.jpg" alt="" />
+      <!-- Titulo -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Directorio De Terapeutas Certificados</h2>
+      </div><!-- /Titulo -->
+      <div class="d-flex align-items-center">
+        <div class="container">
+          <div class="card glass_cont p-4">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <div id="pais" class="form-outline form-white">
+                    <label id="lblPais" for="selPais" class="form-label glass_cont__option">País</label>
+                    <div class="input-group">
+                      <p class="input-group-text" for=""><i class="bi bi-flag-fill ico_busq"></i></p>
+                      <select id="selPais" class="form-select mb-3" aria-label="Large select example">
+                        <option selected>---Selecciona---</option>
+                        <option value="1">México</option>
+                        <option value="2">Argentina</option>
+                        <option value="3">Chile</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                  <div id="ciudad" class="form-outline form-white">
+                    <label id="lblCiudad" for="selCiudad" class="form-label glass_cont__option">Ciudad</label>
+                    <div class="input-group">
+                      <p class="input-group-text"><i class="bi bi-geo-alt-fill ico_busq"></i></p>
+                      <select id="selCiudad" class="form-select mb-3" aria-label="Large select example">
+                        <option selected>---Selecciona---</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 cont_button">
+                  <input id="btnBuscar" class="btn btn-block btn-lg btn-busqueda" type="submit" value="Buscar" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="resultados_busqueda" class="container cont_resultados d-none"> <!--  -->
+        <div class="row gy-4">
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="glass_cont member">
+              <img src="recursos/img/terapeutas_certificados/Terapeuta_2.jpg" class="img-fluid" alt="">
+              <h4>Nombre completo</h4>
+              <span>País y ciudad</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit ipsum, viverra eget tempus vitae,
+                lobortis eu nisi. Quisque a ornare justo. Donec at metus vitae orci dignissim tincidunt. Suspendisse
+                magna lectus, molestie quis est lacinia, bibendum iaculis dui. Proin tincidunt scelerisque diam, ut
+                dapibus dui lobortis nec. Praesent mauris felis, aliquet id viverra sit amet, hendrerit sit amet erat.
+                Etiam id aliquet lacus. Ut rutrum quam mauris, id venenatis ante cursus ut. Aenean vitae enim ac.</p>
+              <div class="social">
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <a href=""><i class="bi bi-telephone-forward"></i></a>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-telegram"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="glass_cont member">
+              <img src="recursos/img/terapeutas_certificados/Terapeuta_1.jpg" class="img-fluid" alt="">
+              <h4>Nombre completo</h4>
+              <span>País y ciudad</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit ipsum, viverra eget tempus vitae,
+                lobortis eu nisi. Quisque a ornare justo. Donec at metus vitae orci dignissim tincidunt. Suspendisse
+                magna lectus, molestie quis est lacinia, bibendum iaculis dui. Proin tincidunt scelerisque diam, ut
+                dapibus dui lobortis nec. Praesent mauris felis, aliquet id viverra sit amet, hendrerit sit amet erat.
+                Etiam id aliquet lacus. Ut rutrum quam mauris, id venenatis ante cursus ut. Aenean vitae enim ac.</p>
+              <div class="social">
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <a href=""><i class="bi bi-telephone-forward"></i></a>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-telegram"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="glass_cont member">
+              <img src="recursos/img/terapeutas_certificados/Terapeuta_4.jpg" class="img-fluid" alt="">
+              <h4>Nombre completo</h4>
+              <span>País y ciudad</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit ipsum, viverra eget tempus vitae,
+                lobortis eu nisi. Quisque a ornare justo. Donec at metus vitae orci dignissim tincidunt. Suspendisse
+                magna lectus, molestie quis est lacinia, bibendum iaculis dui. Proin tincidunt scelerisque diam, ut
+                dapibus dui lobortis nec. Praesent mauris felis, aliquet id viverra sit amet, hendrerit sit amet erat.
+                Etiam id aliquet lacus. Ut rutrum quam mauris, id venenatis ante cursus ut. Aenean vitae enim ac.</p>
+              <div class="social">
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <a href=""><i class="bi bi-telephone-forward"></i></a>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-telegram"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Terapeutas-->
+
 
     <!-- Features Section -->
     <section id="features" class="features section">
@@ -2138,6 +2291,7 @@
   <script src="recursos/complementos/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="recursos/complementos/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="recursos/complementos/swiper/swiper-bundle.min.js"></script>
+
 
   <!-- Main JS File -->
   <script src="recursos/js/main.js"></script>

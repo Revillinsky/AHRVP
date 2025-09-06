@@ -204,8 +204,11 @@
   document.querySelectorAll(".item_vertical a").forEach((faqItem) => {
     faqItem.addEventListener("click", () => {
       const elementoInicial = document.getElementById("miembro");
+      // Si contiene la clase swiperInTab se debe inicializar al aparecer el tab
+      if (faqItem.classList.contains("swiperInTab")) {
+        new Swiper(document.querySelector("#testim_2"), conf_swiper);
+      }
       const posicionGuardada = elementoInicial.scrollTop;
-      console.log("Posición guardada:", posicionGuardada);
       elementoInicial.scrollTop = posicionGuardada;
       elementoInicial.scrollIntoView({ behavior: "instant" });
       AOS.refresh();
@@ -215,9 +218,11 @@
   /**
    * Init swiper sliders
    */
-  const conf_swiper = {
+  let conf_swiper = {
     loop: "true",
     speed: "600",
+    observer: true,
+    observeParents: true,
     autoplay: {
       delay: "5000",
     },
@@ -238,15 +243,14 @@
       },
     },
   };
-
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
-      let config = conf_swiper;
       if (swiperElement.classList.contains("swiper-tab")) {
-        initSwiperWithCustomPagination(swiperElement, config);
-      } else {
-        new Swiper(swiperElement, config);
+        initSwiperWithCustomPagination(swiperElement, conf_swiper);
+      } else if (!swiperElement.classList.contains("swiperInTab")) {
+        new Swiper(swiperElement, conf_swiper);
       }
+      // Si contiene la clase swiperInTab se debe inicializar al aparecer el tab
     });
   }
 
@@ -296,4 +300,13 @@
   }
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
+  /**
+   * Buscador
+   */
+
+  let busqueda = document.querySelector("#btnBuscar");
+  console.log(busqueda);
+  busqueda.addEventListener("click", (e) => {
+    document.querySelector("#resultados_busqueda").classList.toggle("d-none");
+  });
 })();
