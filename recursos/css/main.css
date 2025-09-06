@@ -1338,6 +1338,7 @@ section,
   max-width: 200px;
   max-height: 200px;
   border-radius: 200px;
+  z-index: 1020;
 }
 
 .ladoIzq > .card_contenido {
@@ -1379,6 +1380,7 @@ section,
   max-width: 200px;
   max-height: 200px;
   border-radius: 200px;
+  z-index: 1020;
 }
 
 @media (max-width: 1200px) {
