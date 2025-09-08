@@ -308,4 +308,21 @@
   busqueda.addEventListener("click", (e) => {
     document.querySelector("#resultados_busqueda").classList.toggle("d-none");
   });
+
+  // Obtener el elemento label para la resolución de pantalla
+  const screenSizeLabel = document.getElementById("screen-size");
+  // Obtener el elemento label para el tamaño de la ventana
+  const windowSizeLabel = document.getElementById("window-size");
+
+  // Mostrar la resolución de pantalla
+  screenSizeLabel.textContent = `Ancho: ${window.screen.width}px, Alto: ${window.screen.height}px`;
+
+  // Mostrar el tamaño de la ventana del navegador
+  windowSizeLabel.textContent = `Ancho: ${window.innerWidth}px, Alto: ${window.innerHeight}px`;
+
+  // También puedes escuchar el evento de redimensionamiento de la ventana
+  window.addEventListener("resize", () => {
+    screenSizeLabel.textContent = `Ancho: ${window.screen.width}px, Alto: ${window.screen.height}px`;
+    windowSizeLabel.textContent = `Ancho: ${window.innerWidth}px, Alto: ${window.innerHeight}px`;
+  });
 })();
