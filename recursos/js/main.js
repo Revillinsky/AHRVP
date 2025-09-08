@@ -224,7 +224,7 @@
     observer: true,
     observeParents: true,
     autoplay: {
-      delay: "5000",
+      delay: "500000",
     },
     slidesPerView: "auto",
     pagination: {

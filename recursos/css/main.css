@@ -473,11 +473,11 @@ h6 {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
-@media (min-width: 767px) and (max-width: 1200px) {
+/* @media (min-width: 767px) and (max-width: 1200px) {
   .testimonial-md > .swiper-slide > .testimonial-item {
     min-height: 301px;
   }
-}
+} */
 @media (max-width: 767px) {
   .testimonials .testimonial-wrap {
     padding-left: 0;
@@ -1781,6 +1781,15 @@ section,
 
 /* Pestañas Verticales
 ------------------------------*/
+.menu_estatico {
+  -ms-flex-item-align: start;
+  align-self: start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10%;
+  z-index: 1020;
+}
+
 .tab_vertical_AHRVP > ul {
   position: -webkit-sticky;
   position: sticky;
@@ -1790,14 +1799,7 @@ section,
   display: block;
   padding-bottom: 10%;
 }
-.menu_estatico {
-  -ms-flex-item-align: start;
-  align-self: start;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 10%;
-  z-index: 1020;
-}
+
 .tab_vertical_AHRVP > li :hover {
   position: relative;
   -webkit-box-align: center;
@@ -1809,6 +1811,7 @@ section,
   background-color: #005d8b;
 }
 .tab_vertical_AHRVP > li > a {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1820,7 +1823,6 @@ section,
   color: #005d8b;
   font-weight: bold;
   line-height: 100px;
-  position: relative;
   width: 100%;
   max-height: 100px;
 }
@@ -1847,7 +1849,7 @@ section,
   font-size: 2.5rem;
   max-width: 100%;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 1400px) {
   .li-icon {
     padding-right: 0.3rem;
     padding-left: 0rem;
