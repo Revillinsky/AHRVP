@@ -1790,10 +1790,8 @@ section,
   z-index: 1020;
 }
 
-.tab_vertical_AHRVP > ul {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+.tab_vertical_AHRVP {
+  padding: 0 3%;
 }
 .tab_vertical_AHRVP > li {
   display: block;
