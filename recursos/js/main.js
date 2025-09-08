@@ -305,7 +305,6 @@
    */
 
   let busqueda = document.querySelector("#btnBuscar");
-  console.log(busqueda);
   busqueda.addEventListener("click", (e) => {
     document.querySelector("#resultados_busqueda").classList.toggle("d-none");
   });
