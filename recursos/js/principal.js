@@ -1,17 +1,7 @@
-/**
- * Template Name: KnightOne
- * Template URL: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/
- * Updated: Oct 16 2024 with Bootstrap v5.3.3
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
-
 (function () {
   "use strict";
 
-  /**
-   * Apply .scrolled class to the body as the page is scrolled down
-   */
+  /** Aplicar la clase .scrolled al cuerpo a medida que la página se desplaza hacia abajo */
   function toggleScrolled() {
     const selectBody = document.querySelector("body");
     const selectHeader = document.querySelector("#header");
@@ -25,15 +15,11 @@
       ? selectBody.classList.add("scrolled")
       : selectBody.classList.remove("scrolled");
   }
-
   document.addEventListener("scroll", toggleScrolled);
   window.addEventListener("load", toggleScrolled);
 
-  /**
-   * Mobile nav toggle
-   */
+  /*** Alternar navegación móvil*/
   const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
-
   function mobileNavToogle() {
     document.querySelector("body").classList.toggle("mobile-nav-active");
     mobileNavToggleBtn.classList.toggle("bi-list");
@@ -43,9 +29,7 @@
     mobileNavToggleBtn.addEventListener("click", mobileNavToogle);
   }
 
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
+  /*** Ocultar la navegación móvil en enlaces de la misma página/hash*/
   document.querySelectorAll("#navmenu a").forEach((navmenu) => {
     navmenu.addEventListener("click", () => {
       if (document.querySelector(".mobile-nav-active")) {
@@ -54,9 +38,7 @@
     });
   });
 
-  /**
-   * Toggle mobile nav dropdowns
-   */
+  /*** Activar y desactivar los menús desplegables de navegación móvil */
   document.querySelectorAll(".navmenu .toggle-dropdown").forEach((navmenu) => {
     navmenu.addEventListener("click", function (e) {
       e.preventDefault();
@@ -66,9 +48,7 @@
     });
   });
 
-  /**
-   * Preloader
-   */
+  /*** Cargando */
   const preloader = document.querySelector("#preloader");
   if (preloader) {
     window.addEventListener("load", () => {
@@ -76,9 +56,7 @@
     });
   }
 
-  /**
-   * Scroll top button
-   */
+  /*** Botón de desplazamiento hacia arriba*/
   let scrollTop = document.querySelector(".scroll-top");
 
   function toggleScrollTop() {
@@ -99,9 +77,7 @@
   window.addEventListener("load", toggleScrollTop);
   document.addEventListener("scroll", toggleScrollTop);
 
-  /**
-   * Animation on scroll function and init
-   */
+  /*** Instancia de Animación con librería AOS  */
   function aosInit() {
     AOS.init({
       duration: 600,
@@ -112,63 +88,15 @@
   }
   window.addEventListener("load", aosInit);
 
-  /**
-   * Initiate glightbox
-   */
+  /*** Instancia de glightbox (para videos) */
   const glightbox = GLightbox({
     selector: ".glightbox",
+    touchNavigation: false,
+    loop: false,
+    autoplayVideos: true,
   });
 
-  /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
-
-  /**
-   * Init isotope layout and filters
-   */
-  document.querySelectorAll(".isotope-layout").forEach(function (isotopeItem) {
-    let layout = isotopeItem.getAttribute("data-layout") ?? "masonry";
-    let filter = isotopeItem.getAttribute("data-default-filter") ?? "*";
-    let sort = isotopeItem.getAttribute("data-sort") ?? "original-order";
-    let initIsotope;
-    imagesLoaded(isotopeItem.querySelector(".isotope-container"), function () {
-      initIsotope = new Isotope(
-        isotopeItem.querySelector(".isotope-container"),
-        {
-          itemSelector: ".isotope-item",
-          layoutMode: layout,
-          filter: filter,
-          sortBy: sort,
-        }
-      );
-    });
-
-    isotopeItem
-      .querySelectorAll(".isotope-filters li")
-      .forEach(function (filters) {
-        filters.addEventListener(
-          "click",
-          function () {
-            isotopeItem
-              .querySelector(".isotope-filters .filter-active")
-              .classList.remove("filter-active");
-            this.classList.add("filter-active");
-            initIsotope.arrange({
-              filter: this.getAttribute("data-filter"),
-            });
-            if (typeof aosInit === "function") {
-              aosInit();
-            }
-          },
-          false
-        );
-      });
-  });
-
-  /**
-   * Frequently Asked Questions Toggle
-   */
+  /*** Preguntas frecuentes (Acordeón) */
   const preguntas_all = document.querySelectorAll(
     ".faq-item h3, .faq-item .faq-toggle"
   );
@@ -197,27 +125,23 @@
     }
   };
 
-  /**
-   * Pestañas
-   */
-
+  /*** Pestañas */
   document.querySelectorAll(".item_vertical a").forEach((faqItem) => {
     faqItem.addEventListener("click", () => {
-      const elementoInicial = document.getElementById("miembro");
+      const elementoInicial = document.getElementById("miembros");
+      const posicionGuardada = elementoInicial.scrollTop;
+      elementoInicial.scrollTop = posicionGuardada;
+      elementoInicial.scrollIntoView({ behavior: "instant" });
+
       // Si contiene la clase swiperInTab se debe inicializar al aparecer el tab
       if (faqItem.classList.contains("swiperInTab")) {
         new Swiper(document.querySelector("#testim_2"), conf_swiper);
       }
-      const posicionGuardada = elementoInicial.scrollTop;
-      elementoInicial.scrollTop = posicionGuardada;
-      elementoInicial.scrollIntoView({ behavior: "instant" });
       AOS.refresh();
     });
   });
 
-  /**
-   * Init swiper sliders
-   */
+  /*** Instancia para carruseles */
   let conf_swiper = {
     loop: "true",
     speed: "600",
@@ -253,12 +177,9 @@
       // Si contiene la clase swiperInTab se debe inicializar al aparecer el tab
     });
   }
-
   window.addEventListener("load", initSwiper);
 
-  /**
-   * Correct scrolling position upon page load for URLs containing hash links.
-   */
+  /*** Posición de desplazamiento correcta al cargar la página para URL que contienen enlaces hash. */
   window.addEventListener("load", function (e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
@@ -274,11 +195,8 @@
     }
   });
 
-  /**
-   * Navmenu Scrollspy
-   */
+  /*** Menú de navegación Scrollspy*/
   let navmenulinks = document.querySelectorAll(".navmenu a");
-
   function navmenuScrollspy() {
     navmenulinks.forEach((navmenulink) => {
       if (!navmenulink.hash) return;
@@ -300,29 +218,28 @@
   }
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
-  /**
-   * Buscador
-   */
 
+  /*** Buscador*/
   let busqueda = document.querySelector("#btnBuscar");
   busqueda.addEventListener("click", (e) => {
     document.querySelector("#resultados_busqueda").classList.toggle("d-none");
   });
 
-  // Obtener el elemento label para la resolución de pantalla
-  const screenSizeLabel = document.getElementById("screen-size");
-  // Obtener el elemento label para el tamaño de la ventana
-  const windowSizeLabel = document.getElementById("window-size");
+  /*** Muestra el tamaño del navegador */
+  // // Obtener el elemento label para la resolución de pantalla
+  // const screenSizeLabel = document.getElementById("screen-size");
+  // // Obtener el elemento label para el tamaño de la ventana
+  // const windowSizeLabel = document.getElementById("window-size");
 
-  // Mostrar la resolución de pantalla
-  screenSizeLabel.textContent = `Ancho: ${window.screen.width}px, Alto: ${window.screen.height}px`;
+  // // Mostrar la resolución de pantalla
+  // screenSizeLabel.textContent = `Ancho: ${window.screen.width}px, Alto: ${window.screen.height}px`;
 
-  // Mostrar el tamaño de la ventana del navegador
-  windowSizeLabel.textContent = `Ancho: ${window.innerWidth}px, Alto: ${window.innerHeight}px`;
+  // // Mostrar el tamaño de la ventana del navegador
+  // windowSizeLabel.textContent = `Ancho: ${window.innerWidth}px, Alto: ${window.innerHeight}px`;
 
-  // También puedes escuchar el evento de redimensionamiento de la ventana
-  window.addEventListener("resize", () => {
-    screenSizeLabel.textContent = `Ancho: ${window.screen.width}px, Alto: ${window.screen.height}px`;
-    windowSizeLabel.textContent = `Ancho: ${window.innerWidth}px, Alto: ${window.innerHeight}px`;
-  });
+  // // También puedes escuchar el evento de redimensionamiento de la ventana
+  // window.addEventListener("resize", () => {
+  //   screenSizeLabel.textContent = `Ancho: ${window.screen.width}px, Alto: ${window.screen.height}px`;
+  //   windowSizeLabel.textContent = `Ancho: ${window.innerWidth}px, Alto: ${window.innerHeight}px`;
+  // });
 })();

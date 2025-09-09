@@ -11,8 +11,8 @@
   <meta name="keywords" content="" />
 
   <!-- Favicons -->
-  <link href="recursos/img/Logo/Ico/Logo_AHRVP.ico" rel="icon" />
-  <link href="recursos/img/Logo/Ico/Logo_AHRVP.ico" rel="apple-touch-icon" />
+  <link href="recursos/img/logo/favicon.ico" rel="icon" />
+  <link href="recursos/img/logo/apple-touch-icon.png" rel="apple-touch-icon" />
 
   <!-- Fonts -->
 
@@ -24,7 +24,7 @@
   <link href="recursos/complementos/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
   <!-- Main CSS File -->
-  <link href="recursos/css/main.css" rel="stylesheet" />
+  <link href="recursos/css/principal.css" rel="stylesheet" />
 </head>
 
 <body class="index-page">
@@ -46,13 +46,23 @@
             <a href="#quienes_somos"><span>¿Quiénes somos?</span>
               <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#Historia">Historia de la fundación</a></li>
-              <li><a href="#Junta_directiva">Junta Directiva</a></li>
+              <li><a href="#historia">Historia de la fundación</a></li>
+              <li><a href="#junta_directiva">Junta Directiva</a></li>
               <li><a href="#integridad">Integridad de la asociación</a></li>
             </ul>
           </li>
-          <li><a href="#Terapeutas">Directorio de Terapeutas</a></li>
-          <li><a href="#portfolio">Contacto</a></li>
+          <li>
+            <a href="#miembros">Membresías</a>
+          </li>
+          <li class="dropdown">
+            <a href="#directorio_terapeutas"><span>Directorio</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#directorio_terapeutas">Directorio de Terapeutas</a></li>
+              <li><a href="#escuelas_afiliadas">Escuelas Afiliadas</a></li>
+            </ul>
+          </li>
+
           <!-- <li class="dropdown">
             <a href="#"><span>Dropdown</span>
               <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -108,7 +118,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="recursos/img/Carrusel/Bnnr_Carrusel_01.jpg" class="d-block w-100" alt="..." />
+            <img src="recursos/img/carrusel/Bnnr_Carrusel_01.jpg" class="d-block w-100" alt="..." />
             <span class="texto-superpuesto">
               <h1>Título de la imagen 01</h1>
               <h2>
@@ -122,7 +132,7 @@
             </span>
           </div>
           <div class="carousel-item">
-            <img src="recursos/img/Carrusel/Bnnr_Carrusel_02.jpg" class="d-block w-100" alt="..." />
+            <img src="recursos/img/carrusel/Bnnr_Carrusel_02.jpg" class="d-block w-100" alt="..." />
             <span class="texto-superpuesto">
               <h1>Título de la imagen 02</h1>
               <h2>
@@ -131,7 +141,7 @@
             </span>
           </div>
           <div class="carousel-item">
-            <img src="recursos/img/Carrusel/Bnnr_Carrusel_03.jpg" class="d-block w-100" alt="..." />
+            <img src="recursos/img/carrusel/Bnnr_Carrusel_03.jpg" class="d-block w-100" alt="..." />
             <span class="texto-superpuesto">
               <h1>Título de la imagen 03</h1>
               <h2>
@@ -140,7 +150,7 @@
             </span>
           </div>
           <div class="carousel-item">
-            <img src="recursos/img/Carrusel/Bnnr_Carrusel_04.jpg" class="d-block w-100" alt="..." />
+            <img src="recursos/img/carrusel/Bnnr_Carrusel_04.jpg" class="d-block w-100" alt="..." />
             <span class="texto-superpuesto">
               <h1>Título de la imagen 04</h1>
               <h2>
@@ -149,7 +159,7 @@
             </span>
           </div>
           <div class="carousel-item">
-            <img src="recursos/img/Carrusel/Bnnr_Carrusel_05.jpg" class="d-block w-100" alt="..." />
+            <img src="recursos/img/carrusel/Bnnr_Carrusel_05.jpg" class="d-block w-100" alt="..." />
             <span class="texto-superpuesto">
               <h1>Título de la imagen 05</h1>
               <h2>
@@ -158,7 +168,7 @@
             </span>
           </div>
           <div class="carousel-item">
-            <img src="recursos/img/Carrusel/Bnnr_Carrusel_06.jpg" class="d-block w-100" alt="..." />
+            <img src="recursos/img/carrusel/Bnnr_Carrusel_06.jpg" class="d-block w-100" alt="..." />
             <span class="texto-superpuesto">
               <h1>Título de la imagen 06</h1>
               <h2>
@@ -200,19 +210,18 @@
     <!-- /Presentación -->
 
     <!-- ¿Qué es la terapia de regresión a vidas pasadas?-->
-    <section id="TRVP" class="reg_vidas section">
+    <section id="TRVP" class="reg_vidas section light-background">
       <!-- Título -->
       <div class="container section-title" data-aos="fade-up">
         <h2>¿Qué es la terapia de regresión a vidas pasadas?</h2>
       </div>
       <!-- /Título -->
-
       <div class="container">
         <!-- Video y Beneficios -->
         <div class="row gy-4">
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
             <div class="presentacion pres_col section">
-              <img src="recursos/img/TRVP.jpg" alt="" data-aos="fade-in" />
+              <img src="recursos/img/fondos/TRVP.jpg" alt="Terapia de regresión a vidas pasadas" data-aos="fade-in" />
               <div class="container d-flex flex-column align-items-center text-center">
                 <div data-aos="fade-up" data-aos-delay="300">
                   <a href="recursos/videos/Que_Es.MP4" class="glightbox pulsating-play-btn"></a>
@@ -220,7 +229,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 vertical-center">
+          <div class="col-lg-6 vertical-center p7-xs-lr txt-justify-xs">
             <h1 data-aos="fade-up" data-aos-delay="200">Beneficios</h1>
             <p data-aos="fade-left" data-aos-delay="400">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -248,7 +257,7 @@
         <section id="testimonials" class="testimonials section">
           <!-- Título -->
           <div class="container" data-aos="fade-up">
-            <h2>Testimonials</h2>
+            <h2>Testimonios</h2>
           </div>
           <!-- /Título  -->
           <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -468,7 +477,7 @@
     <!-- /¿Qué es la terapia de regresión a vidas pasadas? -->
 
     <!-- ¿Quiénes somos? -->
-    <section id="quienes_somos" class="call-to-action section dark-background">
+    <section id="quienes_somos" class="quienes-somos section dark-background">
       <img src="recursos/img/fondos/AHRVP_somos.jpg" alt="" />
       <!-- Título -->
       <div class="container section-title" data-aos="fade-up">
@@ -476,9 +485,9 @@
       </div>
       <!-- /Título -->
       <!-- Historia -->
-      <div id="Historia" class="container fondo-lectura-negro">
+      <div id="historia" class="container fondo-lectura-negro">
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-12 text-xl-start">
+          <div class="col-xl-12 text-xl-start txt-justify-xs">
             <h3>Historia de la fundación de la AHRVP</h3>
             <div>
               <p>
@@ -588,9 +597,8 @@
         </div>
       </div>
       <!-- /Historia -->
-      <div class="separador"></div>
       <!-- Directiva -->
-      <div id="Junta_directiva" class="container fondo-lectura-negro">
+      <div id="junta_directiva" class="container fondo-lectura-negro separador">
         <h3>Junta Directiva</h3>
         <div class="row">
           <div class="col-xl-12 text-center text-xl-start">
@@ -685,9 +693,8 @@
         </div>
       </div>
       <!-- /Directiva -->
-      <div class="separador"></div>
       <!-- Integridad -->
-      <div id="integridad" class="container fondo-lectura-negro">
+      <div id="integridad" class="container fondo-lectura-negro separador">
         <!-- Titulo-->
         <div class="container" data-aos="fade-up">
           <h2>Integridad de la asociación</h2>
@@ -723,7 +730,7 @@
               </li>
             </ul>
           </div>
-          <div class="tab-content" id="Tab_Integridad" data-aos="fade-left">
+          <div class="tab-content txt-justify-xs" id="Tab_Integridad" data-aos="fade-left">
             <div class="tab-pane fade show active elemento_tab" id="codigo-tab-pane" role="tabpanel"
               aria-labelledby="codigo-tab" tabindex="0">
               <div>Código de Ética Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin diam eu
@@ -919,16 +926,13 @@
     <!-- /¿Quiénes somos? -->
 
     <!-- Hazte miembro -->
-    <section id="miembro" class="section miembro">
+    <section id="miembros" class="section miembro light-background">
       <!-- Título -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Hazte miembro</h2>
       </div>
       <!-- /Título -->
       <div class="container">
-        <p>La resolución de tu pantalla es: <label id="screen-size"></label></p>
-        <p>El tamaño de la ventana del navegador es: <label id="window-size"></label></p>
-
         <div class="cont_tabs">
           <div class="row d-flex align-items-start">
             <div class="nav flex-column nav-pills col-xl-3 col-lg-4 col-md-3 menu_estatico" id="tab" role="tablist">
@@ -964,8 +968,9 @@
                   </a>
                 </li>
               </ul>
+
             </div>
-            <div class="tab-content p-3 col-xl-9 col-lg-8 col-md-9" id="tabContent">
+            <div class="tab-content p-3 col-xl-9 col-lg-8 col-md-9 txt-justify-xs" id="tabContent">
               <div class="tab-pane fade show active" id="Afiliacion" role="tabpanel" aria-labelledby="Afiliacion-tab"
                 tabindex="0">
                 <div class="cont_texto">
@@ -1473,7 +1478,7 @@
     </section>
     <!-- /Hazte miembro  -->
     <!-- Terapeutas -->
-    <section id="Terapeutas" class="terapeuta section dark-background">
+    <section id="directorio_terapeutas" class="terapeuta section dark-background">
       <img id="fondo" src="recursos/img/fondos/Terapeutas.jpg" alt="" />
       <!-- Titulo -->
       <div class="container section-title" data-aos="fade-up">
@@ -1596,685 +1601,134 @@
     </section><!-- /Terapeutas-->
 
 
-    <!-- Features Section -->
-    <section id="features" class="features section">
+    <!-- Escuelas Afiliadas -->
+    <section id="escuelas_afiliadas" class="sec_afiliados section light-background">
+      <!-- Título -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Escuelas afiliadas</h2>
+      </div>
+      <!-- /Título -->
       <div class="container">
         <div class="row gy-4">
-          <div class="features-image col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="recursos/img/features-bg.jpg" alt="" />
+          <div class="col-xl-4 col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="crd_afiliados">
+              <div class="crd_afiliados-image">
+                <img src="recursos/img/escuelas_afiliadas/Armoniosamenthe.png" alt="Armoniosamenthe" />
+              </div>
+              <div class="crd_afiliados-body">
+                <div class="crd_afiliados-title">
+                  <h3>Nombre de la escuela 01</h3>
+                </div>
+                <div class="crd_afiliados-excerpt">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis vestibulum sapien. Aliquam
+                    urna metus, rhoncus eget orci ac, fringilla condimentum sem. Ut in ullamcorper arcu. Sed justo
+                    massa, porta ut placerat sed, maximus a libero. Phasellus lacus velit, tempus et urna ut, posuere
+                    tempus mauris. Duis nec leo augue. Pellentesque odio sem, feugiat at nisl ornare, consequat rhoncus
+                    magna. Donec accumsan blandit sapien, ultricies dapibus turpis fermentum vel. Vivamus nec lacus
+                    urna. Fusce sit..</p>
+                </div>
+                <div class="crd_afiliados-title">
+                  <a href="https://armoniosamenthe.com/" target="_blank"
+                    rel="noreferrer noopener">www.escuela.com.mx</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="crd_afiliados">
+              <div class="crd_afiliados-image">
+                <img src="recursos/img/escuelas_afiliadas/Armoniosamenthe.png" alt="Armoniosamenthe" />
+              </div>
+              <div class="crd_afiliados-body">
+                <div class="crd_afiliados-title">
+                  <h3>Nombre de la escuela 02</h3>
+                </div>
+                <div class="crd_afiliados-excerpt">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis vestibulum sapien. Aliquam
+                    urna metus, rhoncus eget orci ac, fringilla condimentum sem. Ut in ullamcorper arcu. Sed justo
+                    massa, porta ut placerat sed, maximus a libero. Phasellus lacus velit, tempus et urna ut, posuere
+                    tempus mauris. Duis nec leo augue. Pellentesque odio sem, feugiat at nisl ornare, consequat rhoncus
+                    magna. Donec accumsan blandit sapien, ultricies dapibus turpis fermentum vel. Vivamus nec lacus
+                    urna. Fusce sit..</p>
+                </div>
+                <div class="crd_afiliados-title">
+                  <a href="https://armoniosamenthe.com/" target="_blank"
+                    rel="noreferrer noopener">www.escuela.com.mx</a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-6 order-lg-1">
-            <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-archive flex-shrink-0"></i>
-              <div>
-                <h4>Est labore ad</h4>
-                <p>
-                  Consequuntur sunt aut quasi enim aliquam quae harum pariatur
-                  laboris nisi ut aliquip
-                </p>
+          <div class="col-xl-4 col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="crd_afiliados">
+              <div class="crd_afiliados-image">
+                <img src="recursos/img/escuelas_afiliadas/Armoniosamenthe.png" alt="Armoniosamenthe" />
+              </div>
+              <div class="crd_afiliados-body">
+                <div class="crd_afiliados-title">
+                  <h3>Nombre de la escuela 01</h3>
+                </div>
+                <div class="crd_afiliados-excerpt">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis vestibulum sapien. Aliquam
+                    urna metus, rhoncus eget orci ac, fringilla condimentum sem. Ut in ullamcorper arcu. Sed justo
+                    massa, porta ut placerat sed, maximus a libero. Phasellus lacus velit, tempus et urna ut, posuere
+                    tempus mauris. Duis nec leo augue. Pellentesque odio sem, feugiat at nisl ornare, consequat rhoncus
+                    magna. Donec accumsan blandit sapien, ultricies dapibus turpis fermentum vel. Vivamus nec lacus
+                    urna. Fusce sit..</p>
+                </div>
+                <div class="crd_afiliados-title">
+                  <a href="https://armoniosamenthe.com/" target="_blank"
+                    rel="noreferrer noopener">www.escuela.com.mx</a>
+                </div>
               </div>
             </div>
-            <!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-basket flex-shrink-0"></i>
-              <div>
-                <h4>Harum esse qui</h4>
-                <p>
-                  Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt
-                </p>
-              </div>
-            </div>
-            <!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-broadcast flex-shrink-0"></i>
-              <div>
-                <h4>Aut occaecati</h4>
-                <p>
-                  Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
-                  maiores omnis facere
-                </p>
-              </div>
-            </div>
-            <!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-camera-reels flex-shrink-0"></i>
-              <div>
-                <h4>Beatae veritatis</h4>
-                <p>
-                  Expedita veritatis consequuntur nihil tempore laudantium
-                  vitae denat pacta
-                </p>
-              </div>
-            </div>
-            <!-- End Features Item-->
           </div>
         </div>
       </div>
+
     </section>
-    <!-- /Features Section -->
-
-    <!-- Clients Section -->
-    <section id="clients" class="clients section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-0 clients-wrap">
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="recursos/img/clients/client-1.png" class="img-fluid" alt="" />
-          </div>
-          <!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="recursos/img/clients/client-2.png" class="img-fluid" alt="" />
-          </div>
-          <!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="recursos/img/clients/client-3.png" class="img-fluid" alt="" />
-          </div>
-          <!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="recursos/img/clients/client-4.png" class="img-fluid" alt="" />
-          </div>
-          <!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="recursos/img/clients/client-5.png" class="img-fluid" alt="" />
-          </div>
-          <!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="recursos/img/clients/client-6.png" class="img-fluid" alt="" />
-          </div>
-          <!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="recursos/img/clients/client-7.png" class="img-fluid" alt="" />
-          </div>
-          <!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="recursos/img/clients/client-8.png" class="img-fluid" alt="" />
-          </div>
-          <!-- End Client Item -->
-        </div>
-      </div>
-    </section>
-    <!-- /Clients Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section dark-background">
-      <img src="recursos/img/stats-bg.jpg" alt="" data-aos="fade-in" />
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-        <div class="subheading">
-          <h3>What we have achieved so far</h3>
-          <p>
-            Iusto et labore modi qui sapiente xpedita tempora et aut non ipsum
-            consequatur illo.
-          </p>
-        </div>
-
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div>
-          <!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div>
-          <!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
-          <!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Workers</p>
-            </div>
-          </div>
-          <!-- End Stats Item -->
-        </div>
-      </div>
-    </section>
-    <!-- /Stats Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container">
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul>
-          <!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="recursos/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="recursos/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="recursos/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="recursos/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="recursos/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="recursos/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="recursos/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="recursos/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="recursos/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="recursos/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="recursos/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="recursos/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="recursos/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="recursos/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="recursos/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="recursos/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="recursos/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="recursos/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-          </div>
-          <!-- End Portfolio Container -->
-        </div>
-      </div>
-    </section>
-    <!-- /Portfolio Section -->
+    <!-- /Escuelas Afiliadas-->
 
 
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-      <div class="container-fluid">
-        <div class="row gy-4">
-          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3>
-                <span>Frequently Asked </span><strong>Questions</strong>
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Duis aute irure dolor in reprehenderit
-              </p>
-            </div>
-
-            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
-              <div class="faq-item faq-active">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
-                    id volutpat lacus laoreet non curabitur gravida. Venenatis
-                    lectus magna fringilla urna porttitor rhoncus dolor purus
-                    non.
-                  </p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <!-- End Faq item-->
-
-              <div class="faq-item">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>
-                  Feugiat scelerisque varius morbi enim nunc faucibus a
-                  pellentesque?
-                </h3>
-                <div class="faq-content">
-                  <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque
-                    habitant morbi. Id interdum velit laoreet id donec
-                    ultrices. Fringilla phasellus faucibus scelerisque
-                    eleifend donec pretium. Est pellentesque elit ullamcorper
-                    dignissim. Mauris ultrices eros in cursus turpis massa
-                    tincidunt dui.
-                  </p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <!-- End Faq item-->
-
-              <div class="faq-item">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>
-                  Dolor sit amet consectetur adipiscing elit pellentesque?
-                </h3>
-                <div class="faq-content">
-                  <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                    sagittis orci. Faucibus pulvinar elementum integer enim.
-                    Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
-                    tellus pellentesque eu tincidunt. Lectus urna duis
-                    convallis convallis tellus. Urna molestie at elementum eu
-                    facilisis sed odio morbi quis
-                  </p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <!-- End Faq item-->
-            </div>
-          </div>
-
-          <div class="col-lg-5 order-1 order-lg-2">
-            <img src="recursos/img/faq.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Faq Section -->
-
-    <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Blog Posts</h2>
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-              <div class="post-img">
-                <img src="recursos/img/blog/blog-1.jpg" alt="" class="img-fluid" />
-              </div>
-
-              <p class="post-category">Politics</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="recursos/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0" />
-                <div class="post-meta">
-                  <p class="post-author">Maria Doe</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2022</time>
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-          <!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <article>
-              <div class="post-img">
-                <img src="recursos/img/blog/blog-2.jpg" alt="" class="img-fluid" />
-              </div>
-
-              <p class="post-category">Sports</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="recursos/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0" />
-                <div class="post-meta">
-                  <p class="post-author">Allisa Mayer</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 5, 2022</time>
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-          <!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <article>
-              <div class="post-img">
-                <img src="recursos/img/blog/blog-3.jpg" alt="" class="img-fluid" />
-              </div>
-
-              <p class="post-category">Entertainment</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et
-                  soluta</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="recursos/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0" />
-                <div class="post-meta">
-                  <p class="post-author">Mark Dower</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 22, 2022</time>
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-          <!-- End post list item -->
-        </div>
-        <!-- End recent posts list -->
-      </div>
-    </section>
-    <!-- /Recent Posts Section -->
-
-    <!-- Contact Section -->
-    <section id="PerfilTerapeuta" class="PerfilTerapeuta section light-background">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container" data-aos="fade" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-            </div>
-            <!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div>
-            <!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
-              </div>
-            </div>
-            <!-- End Info Item -->
-          </div>
-
-          <div class="col-lg-8">
-            <form action="forms/PerfilTerapeuta.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="" />
-                </div>
-
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="" />
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="" />
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <!-- End Contact Form -->
-        </div>
-      </div>
-    </section>
-    <!-- /Contact Section -->
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section light-background">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-          <!-- End Pricing Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-item recommended">
-              <span class="recommended-badge">Recommended</span>
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-          <!-- End Pricing Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="pricing-item">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-          <!-- End Pricing Item -->
-        </div>
-      </div>
-    </section>
-    <!-- /Pricing Section -->
   </main>
 
 
-  <footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer">
     <div class="container">
-      <h3 class="sitename">KnightOne</h3>
-      <p>
-        Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni
-        eligendi fuga maxime saepe commodi placeat.
-      </p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span>
-          <strong class="px-1 sitename">KnightOne</strong>
-          <span>All Rights Reserved</span>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="recursos/img/logo/Logo_white.png">
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX PerfilTerapeuta form: [buy-url] -->
-          Designed by
+        <div class="col-md-9 d-flex justify-content-center info">
+          <h3 class="foot-titulo">Asociación Hispanoamericana de Regresión a Vidas Pasadas</h3>
+          <p>
+            Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni
+            eligendi fuga maxime saepe commodi placeat.
+          </p>
+          <div class="social-links d-flex justify-content-center">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-skype"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+          <div class="container">
+            <div class="copyright">
+              <!-- <span>Copyright</span> -->
+              <strong class="px-1 sitename">AHRVP</strong>
+              <span>2025 Derechos Reservados</span>
+            </div>
+            <div class="credits">
+
+              <!-- Designed by
           <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed
-          by <a href=“https://themewagon.com>ThemeWagon
+          by <a href=“https://themewagon.com>ThemeWagon -->
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </footer>
 
@@ -2287,17 +1741,10 @@
 
   <!-- complementos JS Files -->
   <script src="recursos/complementos/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="recursos/complementos/php-email-form/validate.js"></script>
   <script src="recursos/complementos/aos/aos.js"></script>
   <script src="recursos/complementos/glightbox/js/glightbox.min.js"></script>
-  <script src="recursos/complementos/purecounter/purecounter_vanilla.js"></script>
-  <script src="recursos/complementos/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="recursos/complementos/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="recursos/complementos/swiper/swiper-bundle.min.js"></script>
-
-
-  <!-- Main JS File -->
-  <script src="recursos/js/main.js"></script>
+  <script src="recursos/js/principal.js"></script>
 
 </body>
 
