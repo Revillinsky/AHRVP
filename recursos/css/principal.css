@@ -18,7 +18,7 @@
   --contrast-color: #ffffff; /* Color de contraste para el texto, garantizando la legibilidad frente a fondos de acento, encabezado o colores predeterminados. */
   --fondo-transparente: #863ca5a6; /* Fondo con transparencia para el color principal */
   --color-contraste: #d070f8; /* Color mas claro para fondos con imágenes  */
-
+  --fondo-transparente-n: #00000085;
   /* Colores del menú de navegación: Las siguientes variables de color se utilizan específicamente para el menú de navegación. Son independientes de los colores globales para más opciones de personalización. */
   --nav-color: #863ca5; /* El color predeterminado de los enlaces del menú de navegación principal */
   --nav-hover-color: #a97ecb; /* #0295d8 Se aplica a los enlaces del menú de navegación principal cuando se pasa el cursor sobre ellos o están activos. */
@@ -139,6 +139,17 @@ h6 {
 }
 .separador {
   margin-top: 2%;
+}
+.lista-info {
+  list-style: disc !important;
+  padding: revert !important;
+}
+.lista-info > li {
+  display: list-item !important;
+  padding-bottom: 5px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 @media only screen and (max-width: 767px) {
   .fondo-lectura-negro {
@@ -1308,7 +1319,7 @@ section,
   visibility: hidden;
   opacity: 0;
 }
-.faq .faq-container .faq-item .faq-content p {
+.faq .faq-container .faq-item .faq-content div {
   margin-bottom: 0;
   overflow: hidden;
 }
@@ -1363,7 +1374,7 @@ section,
   -webkit-clip-path: inset(0);
   clip-path: inset(0);
 }
-.quienes-somos img {
+.quienes-somos > .img_fondo {
   position: fixed;
   top: 0;
   left: 0;
@@ -1559,6 +1570,136 @@ section,
   }
 }
 
+/* Integridad
+------------------------------*/
+.cont-integridad {
+  padding-top: 2%;
+}
+
+/* Misión y Visión
+------------------------------*/
+.mision_vision {
+  align-items: center;
+}
+.mision_vision > .mv_text {
+  justify-content: center;
+}
+.mision_vision > .mv_text > h4 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.mision_vision > .mv_img {
+  display: flex;
+  justify-content: center;
+}
+.mision_vision > .mv_img > img {
+  mask: url(../img/mascaras/circulos.svg) no-repeat center;
+  mask-size: 100%;
+  max-width: 80%;
+  display: block;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.leyenda {
+  color: gold;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .mv_text {
+    order: 1;
+    padding-top: 10%;
+  }
+  .mv_img {
+    order: 2;
+  }
+}
+
+/* Nuestros valores
+------------------------------*/
+
+.valores .valor-item {
+  background-color: var(--fondo-transparente-n);
+  padding: 11%;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  text-align: center;
+}
+
+.valores .valor-item .icon {
+  /* width: 48px;
+  height: 48px; */
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.valores .valor-item .icon i {
+  font-size: 4rem;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+  position: relative;
+  font-style: normal;
+}
+
+.valores .valor-item .icon:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: color-mix(in srgb, var(--heading-color), transparent 95%);
+  border-radius: 50px;
+  z-index: 1;
+  top: 0px;
+  right: 0px;
+  transition: 0.3s;
+}
+
+.valores .valor-item h3 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin: 0 0 20px 0;
+  padding-bottom: 8px;
+  border-bottom: 4px solid
+    color-mix(in srgb, var(--heading-color), transparent 90%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 10%);
+  transition: 0.3s;
+}
+
+.valores .valor-item h4 {
+  font-size: 1.2rem;
+}
+
+.valores .valor-item p {
+  line-height: 24px;
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-align: left;
+  padding-top: 4%;
+}
+
+.valores .valor-item .readmore {
+  margin-top: 15px;
+  display: inline-block;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.valores .valor-item:hover .icon i {
+  color: var(--heading-color);
+}
+
+.valores .valor-item:hover .icon:before {
+}
+
+.valores .valor-item:hover h3 {
+}
+
+.valores .valor-item:hover .readmore {
+  color: var(--accent-color);
+}
 /* Pestañas
 ------------------------------*/
 .cont_tabs {
