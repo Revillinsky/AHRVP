@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 # Variables root
 --------------------------------------------------------------*/
+html {
+  font-size: 16px;
+}
 :root {
   /* Fuentes */
   --default-font: "Inter", "Roboto", system-ui, -apple-system, "Segoe UI",
@@ -1081,6 +1084,9 @@ section,
   scroll-margin-top: 72px;
   overflow: clip;
 }
+.subtitulo h3 {
+  font-size: 1.5rem;
+}
 
 @media (max-width: 1199px) {
   section,
@@ -1098,13 +1104,15 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
 }
-
+.section-title h3 {
+  font-size: 1.5rem;
+}
 .section-title h2:after {
   content: "";
   position: absolute;
@@ -1267,6 +1275,274 @@ section,
   -webkit-transform: translate(5px, 0);
   -ms-transform: translate(5px, 0);
   transform: translate(5px, 0);
+}
+
+/* Verdades y Mitos
+------------------------------*/
+.mitos_verdades {
+  background: #f7f7f7;
+  border-top: 1px solid rgba(191, 191, 191, 0.4);
+  border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+}
+.mitos_verdades h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+.mv_linea {
+  display: flex;
+  flex-direction: row;
+}
+.mitos_verdades .cont_mitos {
+  position: relative;
+  margin: auto;
+  flex-direction: column;
+}
+.mitos_verdades .cont_mitos::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 48%;
+  border-left: 1px solid rgba(191, 191, 191, 0.4);
+}
+.mitos_verdades .mv_info {
+  position: relative;
+  display: block;
+  margin: 20% auto 20%;
+  max-width: 94%;
+  z-index: 2;
+}
+.mitos_verdades .mv_info .mv_cabecera {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 400;
+}
+.mitos_verdades .mv_info .mv_cabecera .number-box {
+  display: inline;
+  float: left;
+  margin: 15px;
+  padding: 10px;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.17);
+}
+.mitos_verdades .mv_info .mv_cabecera h2 {
+  text-transform: uppercase;
+  font-size: 1.7em;
+  font-weight: inherit;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-bottom: 6px;
+  line-height: 1rem;
+}
+.mitos_verdades .mv_info .mv_cabecera h2 span {
+  display: block;
+  font-size: 0.6rem;
+  margin: 0;
+}
+.mitos_verdades .mv_info .mv_contenido {
+  background: #fff;
+  border: 1px solid rgba(191, 191, 191, 0.4);
+  border-top: 0;
+  padding: 4%;
+  min-height: 80%;
+}
+.mitos_verdades .mv_info .mv_contenido p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-bottom: 15px;
+}
+.mitos_verdades .mv_info .mv_contenido img {
+  display: block;
+  width: 100%;
+}
+.mitos_verdades .mv_mito {
+  background-color: var(--bs-border-color-translucent);
+  order: 1;
+}
+.mitos_verdades .mv_mito .mv_contenido {
+  text-align: center;
+  align-content: center;
+}
+.mitos_verdades .mv_mito h2 {
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  color: var(--bs-danger);
+}
+.mitos_verdades .mv_verdad h2 {
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  color: var(--bs-green);
+}
+.mitos_verdades .mv_mito .mv_cabecera::after {
+  border-color: var(--bs-border-color-translucent);
+}
+.mitos_verdades .mv_verdad {
+  background-color: #3ee9d1;
+  order: 2;
+}
+.mitos_verdades .mv_verdad .mv_cabecera::after {
+  border-color: #3ee9d1;
+}
+.mitos_verdades .mv_info:nth-child(odd) .mv_cabecera::after,
+.mitos_verdades .mv_info:nth-child(even) .mv_cabecera::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.mitos_verdades .mv_info .mv_cabecera::before {
+  position: absolute;
+  right: 113%;
+  width: 100px;
+  height: 100px;
+  background-color: var(--boton-foter);
+  border-radius: 100px;
+  box-shadow: 0px 0px 2px 8px #f7f7f7;
+  font-size: 4rem;
+  padding-left: 1%;
+}
+.emoji_nazar_amulet::before {
+  content: "\1F9FF";
+}
+.emoji_cyclone::before {
+  content: "\1F300";
+}
+.emoji_woman_lotus::before {
+  content: "\1F9D8\200D\2640\FE0F";
+}
+.emoji_brain::before {
+  content: "\1F9E0";
+}
+.emoji_skull::before {
+  content: "\1F480";
+}
+.emoji_candle::before {
+  content: "\1F56F";
+}
+.emoji_repeat::before {
+  content: "\1F501";
+}
+.emoji_compass::before {
+  content: "\1F9ED";
+}
+.mitos_verdades .cont_mitos {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.mitos_verdades .cont_mitos::after {
+  border-left: 10px solid var(--boton-foter);
+}
+.mitos_verdades .mv_info {
+  margin: 5% 8%;
+  max-width: 35%;
+}
+.mitos_verdades .mv_info:nth-child(even) .mv_cabecera::after {
+  border-left-width: 15px;
+  border-left-style: solid;
+  left: 100%;
+}
+.mitos_verdades .mv_info:nth-child(odd) .mv_cabecera::after {
+  border-right-width: 15px;
+  border-right-style: solid;
+  right: 100%;
+}
+.cont_emoji_sm {
+  display: none;
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .mitos_verdades .mv_info .mv_cabecera::before {
+    right: 111%;
+  }
+  .mitos_verdades .mv_info .mv_contenido {
+    min-height: 82%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mitos_verdades .mv_info .mv_cabecera::before {
+    width: 80px;
+    height: 80px;
+    right: 111%;
+    font-size: 3rem;
+    padding-left: 2%;
+  }
+  .mitos_verdades .mv_info .mv_contenido {
+    min-height: 85%;
+  }
+}
+@media (max-width: 991px) {
+  .mv_linea {
+    display: flex;
+    flex-direction: column;
+  }
+  .mitos_verdades {
+    border: none;
+  }
+  .mitos_verdades .mv_info {
+    margin: 6% 0%;
+    max-width: 100%;
+  }
+  .mitos_verdades .cont_mitos::after {
+    border: none;
+  }
+  .mitos_verdades .mv_info .mv_cabecera::before {
+    display: none;
+  }
+  .mitos_verdades .mv_info:nth-child(even) .mv_cabecera::after,
+  .mitos_verdades .mv_info:nth-child(odd) .mv_cabecera::after {
+    display: none;
+  }
+  .mv_mito .mv_cabecera {
+    justify-content: end;
+  }
+
+  .cont_emoji_sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sm-emoji {
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--boton-foter);
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+
+  .linea {
+    position: absolute;
+    height: 0.5rem;
+    width: 100%;
+    background-color: var(--boton-foter);
+    /* margin-right: 40px; */
+    z-index: 0;
+  }
+}
+@media (max-width: 768px) {
+  .mitos_verdades .mv_info {
+    margin: 9% 0%;
+  }
+}
+@media (max-width: 578px) {
+  .mitos_verdades .mv_info {
+    margin: 10% 0%;
+  }
 }
 
 /* Preguntas frecuentes
@@ -1605,6 +1881,11 @@ section,
   color: gold;
   text-align: center;
 }
+.leyenda_obscura {
+  color: var(--bs-gray);
+  text-align: center;
+}
+
 @media (max-width: 767px) {
   .mv_text {
     order: 1;
