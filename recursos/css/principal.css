@@ -610,6 +610,7 @@ h6 {
   color: color-mix(in srgb, var(--surface-color), transparent 30%);
 }
 .scrolled .header .logo img {
+  -webkit-filter: hue-rotate(60deg) brightness(500%);
   filter: hue-rotate(60deg) brightness(500%);
 }
 .scrolled .mobile-nav-toggle {
@@ -958,6 +959,9 @@ h6 {
     color-mix(in srgb, var(--contrast-color), transparent 90%);
 }
 .footer .info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .footer .credits {
@@ -1291,12 +1295,20 @@ section,
   margin-bottom: 20px;
 }
 .mv_linea {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 .mitos_verdades .cont_mitos {
   position: relative;
   margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .mitos_verdades .cont_mitos::after {
@@ -1317,7 +1329,11 @@ section,
 }
 .mitos_verdades .mv_info .mv_cabecera {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: #fff;
   font-weight: 400;
@@ -1364,10 +1380,13 @@ section,
 }
 .mitos_verdades .mv_mito {
   background-color: var(--bs-border-color-translucent);
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
   order: 1;
 }
 .mitos_verdades .mv_mito .mv_contenido {
   text-align: center;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 .mitos_verdades .mv_mito h2 {
@@ -1385,6 +1404,8 @@ section,
 }
 .mitos_verdades .mv_verdad {
   background-color: #3ee9d1;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
   order: 2;
 }
 .mitos_verdades .mv_verdad .mv_cabecera::after {
@@ -1406,6 +1427,7 @@ section,
   height: 100px;
   background-color: var(--boton-foter);
   border-radius: 100px;
+  -webkit-box-shadow: 0px 0px 2px 8px #f7f7f7;
   box-shadow: 0px 0px 2px 8px #f7f7f7;
   font-size: 4rem;
   padding-left: 2%;
@@ -1435,6 +1457,8 @@ section,
   content: "\1F9ED";
 }
 .mitos_verdades .cont_mitos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: auto;
@@ -1482,7 +1506,12 @@ section,
 }
 @media (max-width: 991px) {
   .mv_linea {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .mitos_verdades {
@@ -1503,24 +1532,39 @@ section,
     display: none;
   }
   .mv_mito .mv_cabecera {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: end;
   }
 
   .cont_emoji_sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .sm-emoji {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background-color: var(--boton-foter);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 50px;
     text-align: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 1;
   }
@@ -1855,9 +1899,13 @@ section,
 /* Misión y Visión
 ------------------------------*/
 .mision_vision {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .mision_vision > .mv_text {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .mision_vision > .mv_text > h4 {
@@ -1866,15 +1914,22 @@ section,
 }
 
 .mision_vision > .mv_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .mision_vision > .mv_img > img {
+  -webkit-mask: url(../img/mascaras/circulos.svg) no-repeat center;
   mask: url(../img/mascaras/circulos.svg) no-repeat center;
+  -webkit-mask-size: 100%;
   mask-size: 100%;
   max-width: 80%;
   display: block;
   aspect-ratio: 1;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .leyenda {
@@ -1888,10 +1943,14 @@ section,
 
 @media (max-width: 767px) {
   .mv_text {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
     padding-top: 10%;
   }
   .mv_img {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
   }
 }
@@ -1902,6 +1961,7 @@ section,
 .valores .valor-item {
   background-color: var(--fondo-transparente-n);
   padding: 11%;
+  -webkit-box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   height: 100%;
   text-align: center;
@@ -1917,6 +1977,8 @@ section,
 
 .valores .valor-item .icon i {
   font-size: 4rem;
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
   z-index: 2;
   position: relative;
@@ -1933,6 +1995,8 @@ section,
   z-index: 1;
   top: 0px;
   right: 0px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -1947,6 +2011,8 @@ section,
   border-bottom: 4px solid
     color-mix(in srgb, var(--heading-color), transparent 90%);
   border-color: color-mix(in srgb, var(--accent-color), transparent 10%);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -2853,14 +2919,23 @@ section,
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -webkit-transition-property: -webkit-filter width;
+    transition-property: -webkit-filter width;
+    -o-transition-property: filter width;
     transition-property: filter width;
+    transition-property: filter width, -webkit-filter width;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
   }
 }
 .crd_afiliados-body {
   text-align: center;
   padding: 15px 20px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .crd_afiliados-title {
