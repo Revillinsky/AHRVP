@@ -1430,7 +1430,15 @@ section,
   -webkit-box-shadow: 0px 0px 2px 8px #f7f7f7;
   box-shadow: 0px 0px 2px 8px #f7f7f7;
   font-size: 4rem;
-  padding-left: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .emoji_nazar_amulet::before {
   content: "\1F9FF";
@@ -1498,7 +1506,6 @@ section,
     height: 80px;
     right: 111%;
     font-size: 3rem;
-    padding-left: 2%;
   }
   .mitos_verdades .mv_info .mv_contenido {
     min-height: 85%;
