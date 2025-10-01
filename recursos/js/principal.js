@@ -14,10 +14,10 @@
 
     if (window.scrollY > 100) {
       selectBody.classList.add("scrolled");
-      if (logo) logo.src = "../recursos/img/logo/Logo_white_nv.png"; // ←logo blanco
+      if (logo) logo.src = "recursos/img/logo/Logo_white_nv.png"; // ←logo blanco
     } else {
       selectBody.classList.remove("scrolled");
-      if (logo) logo.src = "../recursos/img/logo/Logo_AHRVP.png"; // ← logo original
+      if (logo) logo.src = "recursos/img/logo/Logo_AHRVP.png"; // ← logo original
     }
 
     /*  window.scrollY > 100
@@ -235,7 +235,7 @@
   });
 
   /*** Modal para integrantes*/
-  fetch("/recursos/json/integrantes.json")
+  fetch("recursos/json/integrantes.json")
     .then((response) => response.json())
     .then((data) => {
       window.integrantesInfo = data;
