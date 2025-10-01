@@ -11,9 +11,18 @@
       !selectHeader.classList.contains("fixed-top")
     )
       return;
-    window.scrollY > 100
+
+    if (window.scrollY > 100) {
+      selectBody.classList.add("scrolled");
+      if (logo) logo.src = "../recursos/img/logo/Logo_white_nv.png"; // ←logo blanco
+    } else {
+      selectBody.classList.remove("scrolled");
+      if (logo) logo.src = "../recursos/img/logo/Logo_AHRVP.png"; // ← logo original
+    }
+
+    /*  window.scrollY > 100
       ? selectBody.classList.add("scrolled")
-      : selectBody.classList.remove("scrolled");
+      : selectBody.classList.remove("scrolled"); */
   }
   document.addEventListener("scroll", toggleScrolled);
   window.addEventListener("load", toggleScrolled);
@@ -224,6 +233,28 @@
   busqueda.addEventListener("click", (e) => {
     document.querySelector("#resultados_busqueda").classList.toggle("d-none");
   });
+
+  /*** Modal para integrantes*/
+  fetch("/recursos/json/integrantes.json")
+    .then((response) => response.json())
+    .then((data) => {
+      window.integrantesInfo = data;
+    });
+
+  window.mostrarModalPorId = function (id) {
+    const persona = window.integrantesInfo.find((p) => p.id === id);
+    if (!persona) return;
+
+    document.getElementById("modalNombre").textContent = persona.nombre;
+    document.getElementById("modalCargo").textContent = persona.cargo;
+    document.getElementById("modalFoto").src = persona.foto;
+    document.getElementById("modalDescripcion").innerHTML = persona.descripcion;
+
+    const modal = new bootstrap.Modal(document.getElementById("infoModal"));
+    modal.show();
+  };
+
+  /*** Audio*/
 
   /*** Muestra el tamaño del navegador */
   // // Obtener el elemento label para la resolución de pantalla
