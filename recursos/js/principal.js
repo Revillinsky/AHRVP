@@ -157,7 +157,7 @@
     observer: true,
     observeParents: true,
     autoplay: {
-      delay: "500000",
+      delay: "5000",
     },
     slidesPerView: "auto",
     pagination: {
@@ -176,17 +176,79 @@
       },
     },
   };
+
+  /*** Función para igualar la altura de los slides dentro de un carrusel */
+
+  function igualarAlturaSlides(swiperElement, swiperInstance) {
+    const slidesPerView = swiperInstance.params.slidesPerView;
+
+    // Si solo hay un slide visible, no igualamos alturas
+    if (slidesPerView === 1 || slidesPerView === "1") {
+      swiperElement.querySelectorAll(".swiper-slide").forEach((slide) => {
+        slide.style.height = "auto";
+      });
+      return;
+    }
+
+    // Si hay más de uno, igualamos alturas
+    const slides = swiperElement.querySelectorAll(".swiper-slide");
+    let maxHeight = 0;
+
+    slides.forEach((slide) => {
+      slide.style.height = "auto";
+      const height = slide.offsetHeight;
+      if (height > maxHeight) maxHeight = height;
+    });
+
+    slides.forEach((slide) => {
+      slide.style.height = `${maxHeight}px`;
+    });
+  }
+
+  /*** Inicializar Swiper con ajuste de altura */
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
+      let swiperInstance;
+
       if (swiperElement.classList.contains("swiper-tab")) {
         initSwiperWithCustomPagination(swiperElement, conf_swiper);
       } else if (!swiperElement.classList.contains("swiperInTab")) {
-        new Swiper(swiperElement, conf_swiper);
+        swiperInstance = new Swiper(swiperElement, conf_swiper);
       }
-      // Si contiene la clase swiperInTab se debe inicializar al aparecer el tab
+
+      // Si se creó una instancia, aplicar ajuste de altura
+      if (swiperInstance) {
+        swiperInstance.on("init", function () {
+          igualarAlturaSlides(swiperElement, swiperInstance);
+        });
+
+        swiperInstance.on("slideChangeTransitionEnd", function () {
+          igualarAlturaSlides(swiperElement, swiperInstance);
+        });
+
+        window.addEventListener("resize", function () {
+          igualarAlturaSlides(swiperElement, swiperInstance);
+        });
+
+        // Ejecutar por si ya está visible al cargar
+        igualarAlturaSlides(swiperElement, swiperInstance);
+      }
     });
   }
+
   window.addEventListener("load", initSwiper);
+
+  // function initSwiper() {
+  //   document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
+  //     if (swiperElement.classList.contains("swiper-tab")) {
+  //       initSwiperWithCustomPagination(swiperElement, conf_swiper);
+  //     } else if (!swiperElement.classList.contains("swiperInTab")) {
+  //       new Swiper(swiperElement, conf_swiper);
+  //     }
+  //     // Si contiene la clase swiperInTab se debe inicializar al aparecer el tab
+  //   });
+  // }
+  // window.addEventListener("load", initSwiper);
 
   /*** Posición de desplazamiento correcta al cargar la página para URL que contienen enlaces hash. */
   window.addEventListener("load", function (e) {

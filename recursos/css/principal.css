@@ -499,6 +499,18 @@ h6 {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 /* @media (min-width: 767px) and (max-width: 1200px) {
   .testimonial-md > .swiper-slide > .testimonial-item {
     min-height: 301px;
